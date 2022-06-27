@@ -19,7 +19,7 @@ The purpose of this system is to measure and gather the data of the Tröllsjö. 
 ![ph_scale](https://user-images.githubusercontent.com/50623449/175970185-f554e611-fa88-4576-b9a7-8ab2cc481a02.png)
 *Figure 2: PH scale designed using [Inkscape](https://inkscape.org/)*
 
-## Materials: Hardware
+## Materials: *Hardware
 To complete the tutorial, you can use any Pycom ESP32 development board that supports WIFI. In this tutorial we focus on LoPy4. If you are environment conscious, you can purchase cheaper second-hand devices for around 600 Swedish crowns at online stores. If you want to buy new devices like this one [Pycom Basic bundle @ Electrokit](https://www.electrokit.com/produkt/lnu-1dt305-tillampad-iot-fipy-basic-bundle/) , it will cost you up to 1,348 Swedish crowns.
 
 [ ]
