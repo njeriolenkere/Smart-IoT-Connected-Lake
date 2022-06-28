@@ -34,4 +34,61 @@ To complete the tutorial, you can use any Pycom ESP32 development board that sup
 | Micro USB cable   | Used for connecting the computer to the Expansion Board v3.1  |  ![usbCable](https://user-images.githubusercontent.com/50623449/176182383-f7fbeae1-55e9-4e13-b9a9-f548f738cd8a.png) |  [Electrokit](https://www.electrokit.com/produkt/lnu-1dt305-tillampad-iot-fipy-basic-bundle/)      |
 
 *Figure 3: Table with bill of materials*
-[ ]
+
+## Computer set up
+### Step 1: Choosing IDE(Integrated Development Environment)
+I tried using Pycharm IDE but at this time they do not support Pymakr plugin yet hence I download and used Atom IDE for windows because they support the plugin.  Download and install  [Atom (here)](https://atom.io/). Then  download and install [Node js (here)](https://nodejs.org/en/)). After installing both Atom and Node.js, restart you computer. Find a detailed tutorial here : [Pycom](https://docs.pycom.io/)  If you want to use another IDE such as Visual Studio Code IDE follow this easy to follow tutorial : [Visual Studio Code set up](https://www.youtube.com/watch?v=fu_O6gtrDG4) Note: All the softwares used in this project are free.
+
+### Step 2: LoPy4 and development board
+Connect the Lopy4 to the board 3.1 using pins. Then connect your device (1) to the computer using the USB cable (2). ![getting_started](https://user-images.githubusercontent.com/50623449/176187022-14cae240-89fa-4e1b-aaf0-a0b36debb4b3.png)
+*Figure 4: Source: [Pycom.io](https://docs.pycom.io/)*
+
+### Step 3: Firmware update
++ Update your firmware to the latest version to avoid running into issues.  [Upload from here Updating Device Firmware (pycom.io)](https://docs.pycom.io/updatefirmware/device/). Install the downloaded file and open it. Press Continue.
++ Communication -> type, choose development and press continue.  
++ RESET ->  check the boxes, CONFIG partion  and  NVS Partition, press continue.
++ Advance setting -> on device type, choose your device.  On file system  ->  check the boxes of Erase during update. On LoRa region  ->  choose your country,  press continue. 
++ After a few minutes, you will see results, press done. 
+
+### Step 4: Setting up Atom
+Open Atom go to file->settings->install->search for Pymakr and then install it. Step by step guide on how to install Pymaker in Atom can be found here:  [Pymakr] https://docs.pycom.io/gettingstarted/software/atom/
+
+### Step 5: Add project
+On Atom, go to File-> add Project Folder 
+Give the Project Folder a name eg. lopy. Right click on your Project Folder ->New File-> write main.py, click enter. Repeat the same procedure inorder create a boot.py file and config.py file.
+
+![3COM](https://user-images.githubusercontent.com/50623449/176190060-31a16201-dd67-4b03-9f83-c1dfd7cdcc48.png)
+*Figure 5: Atom project*
+
+Click on the main.py and paste this MicroPython code below and press **ctrl + S** on your keyboard to save it:(It is important to always save a file after pasting/writing it before uploading it to avoid issues)
+```MicroPython
+import pycom
+import time
+
+pycom.heartbeat(False)
+while True:
+    #colors in hexadecimal (0xRRGGBB)
+    pycom.rgbled(0xFF0000)  # LED turns Red
+    time.sleep(1)
+    pycom.rgbled(0x00FF00)  # LED turns Green
+    time.sleep(1)
+    pycom.rgbled(0x0000FF)  # LED turns Blue
+    time.sleep(1) 
+   ```
+    
+Click on the upload button to feed the code to your device. If your device is connected and working properly, the LED light on the Lopy4 will start blinking red, green and blue every second. To stop the blinking of the LED use **ctrl + C** to cancel the while loop.
+
+### Troubleshoot: Problem 1 
+If you upload the main.py file but encounter a problem such as >>Upload failed: No project open, check (1) to make sure the Project Folder (lopy) is selected and not pymakr. Click the upload button (2) and it should begin blinking.
+
+*Figure 6: Troubleshooting*
+
+### Troubleshoot: Problem 2
+If the Pymaker console indicates Conecting to ...>> failed to connect (error: Port is not open) Click here to try again, reconnect the micro controller, uninstall and then install the Pymaker. Then upload main.py file. If that doesn't work, it is possible that the Pymarker console did not identify the right COMM port. To solves this, follow this tutorial: [COMM Port Issue solved, Time: 18:25-20:35](https://www.youtube.com/watch?v=BPSxLsorNco&t=1223s)
+
+### Troubleshoot: Problem 3
+If you can not see the console that allows you to upload your file, if you have not installed the Pymakr plugin do so. If you have already installed thePymakr Plugin but still you cannot see the console do this: File-> Settings-> Install ->  search for Pymakr plugin. Diasble then uninstall it. Now reinstall the Pymakr plugin.
+
+### Troubleshoot: Problem 4
+Iif you press the play button and you get a no module named error message eg, ImportError: no module named 'pycom' ,first upload the file into the device by using the upload button. After you can press the play button.
+
