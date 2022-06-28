@@ -85,6 +85,7 @@ Click on the upload button to feed the code to your device. If your device is co
 If you upload the main.py file but encounter a problem such as >>Upload failed: No project open, check Project Folder (1) to make sure that (lopy) is selected and not pymakr. Click the upload button (3) and your device Pycom should begin blinking.
 
 ![prob1](https://user-images.githubusercontent.com/50623449/176201445-12df694b-68c5-4917-b1b7-e7b39e4a909f.png)
+
 *Figure 6: Troubleshooting*
 
 ### Troubleshoot: Problem 2
