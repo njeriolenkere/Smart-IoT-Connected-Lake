@@ -23,15 +23,15 @@ The purpose of this system is to measure and gather the data of the lake named T
 To complete the tutorial, you can use any Pycom ESP32 development board that supports WIFI. In this tutorial we focus on [LoPy4](https://docs.pycom.io/products/) If you are environment conscious, you can purchase cheaper second-hand devices for around 600 Swedish crowns at online stores. If you want to buy new devices like this one [Pycom Basic bundle @ Electrokit](https://www.electrokit.com/produkt/lnu-1dt305-tillampad-iot-fipy-basic-bundle/) , it will cost you up to 1,348 Swedish crowns.
 
 | Name        | Specifications | Picture        | Store       |
-| ----------- | :-------------- | -------------- | ----------- |
-| LoPy4      | The LoPy4 is Micropython-programmable quadruple bearer board.  |  ![lopy](https://user-images.githubusercontent.com/50623449/175974259-470f2112-fa5d-4d31-b082-1476a6deab3a.png)| Store       |
-| Expansion Board v3.1   | The Expansion Board v3.1 is a  printed circuit board that is insert into a LoPy4 to give it added capabilities. It is compatible with the WiPy 3.0, LoPy4, SiPy, FiPy and Gpy.         |  Pic        | store       |
-| Breadboard   | Used for building circuits on.        |   Pic        | Store       |
-| Jumpwire (20 st)   | Used to interconnect the components on a breadboard.         |   Pic          |  Store       |
-| Temperature Sensor (DS18B20)  | Used to measure extreme cold and heat (-55 to 125 °C).         |   Pic         |  Store      |
-| pH Sensor (SEN0161)   | Used to get pH measurements.       |   Pic         |  Store       |
-| Resistor (4.7kΩ)   | 4.7kΩ pullup resistor used to limit the current in a circuit.        |   Pic         |  Store       |
-| Micro USB cable   | Used for connecting the computer to the Expansion Board v3.1         |   Pic         |  Store      |
+| :----------- | :-------------- | -------------- | :----------- |
+| LoPy4      | The LoPy4 is Micropython-programmable quadruple bearer board.  |  ![lopy](https://user-images.githubusercontent.com/50623449/175974259-470f2112-fa5d-4d31-b082-1476a6deab3a.png)| [Pycom](https://pycom.io/product/lopy4/)     |
+| Expansion Board v3.1   | The Expansion Board v3.1 is a  printed circuit board that is insert into a LoPy4 to give it added capabilities. It is compatible with the WiPy 3.0, LoPy4, SiPy, FiPy and Gpy.         |  ![expansionBoard](https://user-images.githubusercontent.com/50623449/176181995-538b92d5-510c-4575-a9e7-9041344a0d10.png) | [Pycom](https://pycom.io/product/expansion-board-3-0//)    |
+| Breadboard   | Used for building circuits on.        | ![breadb](https://user-images.githubusercontent.com/50623449/176182048-a0141aa7-a436-4b46-969c-90a449c49ddb.png) | [HiTechChain](https://hitechchain.se/arduinokompatibel/tillbehor/kopplingsdack-breadboard-83x55cm)    |
+| Jumpwire (20 st)   | Used to interconnect the components on a breadboard.         |  ![jumpercables](https://user-images.githubusercontent.com/50623449/176182102-033f2d21-c7aa-464d-b01f-6030ce509f8b.jpeg) |  [HiTechChain](https://hitechchain.se/arduinokompatibel/tillbehor/kopplingsdack-breadboard-jumper-wire)       |
+| Temperature Sensor (DS18B20)  | Used to measure extreme cold and heat (-55 to 125 °C).   |  ![temp](https://user-images.githubusercontent.com/50623449/176182195-b4792e2f-0378-47b2-a1d7-36e9ff9df7a8.png)|  [HiTechChain](https://hitechchain.se/iot/ttgo/ttgo-waterproof-ds18b20-temperature-probe-temperature-sensor-18b20-stainless-steel-package)     |
+| pH Sensor (SEN0161)   | Used to get pH measurements.     |  ![ph](https://user-images.githubusercontent.com/50623449/176182244-ca31dfb1-f3c6-4e15-936c-ee86f3a12891.png) | [Arduino](https://store.arduino.cc/products/gravity-analog-ph-sensor-meter-kit?queryID=undefined)      |
+| Resistor (4.7kΩ)   | 4.7kΩ pullup resistor used to limit the current in a circuit.    |![resistor](https://user-images.githubusercontent.com/50623449/176184543-5a4d1d40-dddc-4e56-a6d5-964702ef40be.jpg) | [Electrokit](https://www.electrokit.com/produkt/lnu-1dt305-tillampad-iot-fipy-basic-bundle/)       |
+| Micro USB cable   | Used for connecting the computer to the Expansion Board v3.1  |  ![usbCable](https://user-images.githubusercontent.com/50623449/176182383-f7fbeae1-55e9-4e13-b9a9-f548f738cd8a.png) |  [Electrokit](https://www.electrokit.com/produkt/lnu-1dt305-tillampad-iot-fipy-basic-bundle/)      |
 
 *Figure 3: Table with bill of materials*
 [ ]
