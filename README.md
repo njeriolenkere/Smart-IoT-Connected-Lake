@@ -12,12 +12,14 @@ The aim of this project is to create a smart IOT connected lake. Using the tempe
 ![projectOverview](https://user-images.githubusercontent.com/50623449/175966042-1a00d573-fcf9-4389-ac72-350f675e068d.jpg)
 *Figure 1: Project overview*
 
+
 ## Objective
 Initially I wanted to create a smart garden, but due to hardware delay and eventual cancellation, I had to create something else. Our lecturer, Fredrik, shared with us, the students, several project inspiration .  One of the project ideas inspired me to create the smart IoT connected lake.
 The purpose of this system is to measure and gather the data of the lake named Tröllsjön, in Tranås, Sweden. The temperature is measured to avoid the body from getting a cold water shock when you dive in the first time while the pH is measured to know the pH scale of the water because according to [usgs.gov](https://www.usgs.gov/faqs/can-lakes-near-volcanoes-become-acidic-enough-be-dangerous-people-and-animals) they state that pH of 0.5 is potentially capable of causing burns to human skin. The data collected from the temperature sensor (DS18B20) and the pH sensor (SEN0161) can be viewed on the IOT platform(Ubidots) to help the swimmer know the conditions of the lake before they take a dive.
 
 ![ph_scale](https://user-images.githubusercontent.com/50623449/175970185-f554e611-fa88-4576-b9a7-8ab2cc481a02.png)
 *Figure 2: PH scale designed using [Inkscape](https://inkscape.org/)*
+
 
 ## Materials: Hardware
 To complete the tutorial, you can use any Pycom ESP32 development board that supports WIFI. In this tutorial we focus on [LoPy4](https://docs.pycom.io/products/) If you are environment conscious, you can purchase cheaper second-hand devices for around 600 Swedish crowns at online stores. If you want to buy new devices like this one [Pycom Basic bundle @ Electrokit](https://www.electrokit.com/produkt/lnu-1dt305-tillampad-iot-fipy-basic-bundle/) , it will cost you up to 1,348 Swedish crowns.
@@ -34,6 +36,7 @@ To complete the tutorial, you can use any Pycom ESP32 development board that sup
 | Micro USB cable   | Used for connecting the computer to the Expansion Board v3.1  |  ![usbCable](https://user-images.githubusercontent.com/50623449/176182383-f7fbeae1-55e9-4e13-b9a9-f548f738cd8a.png) |  [Electrokit](https://www.electrokit.com/produkt/lnu-1dt305-tillampad-iot-fipy-basic-bundle/)      |
 
 *Figure 3: Table with bill of materials*
+
 
 ## Computer set up
 ### Step 1: Choosing IDE(Integrated Development Environment)
@@ -79,8 +82,9 @@ while True:
 Click on the upload button to feed the code to your device. If your device is connected and working properly, the LED light on the Lopy4 will start blinking red, green and blue every second. To stop the blinking of the LED use **ctrl + C** to cancel the while loop.
 
 ### Troubleshoot: Problem 1 
-If you upload the main.py file but encounter a problem such as >>Upload failed: No project open, check (1) to make sure the Project Folder (lopy) is selected and not pymakr. Click the upload button (2) and it should begin blinking.
+If you upload the main.py file but encounter a problem such as >>Upload failed: No project open, check (1) to make sure the Project Folder (lopy) is selected and not pymakr. Click the upload button (3) and it should begin blinking.
 
+![prob1](https://user-images.githubusercontent.com/50623449/176201445-12df694b-68c5-4917-b1b7-e7b39e4a909f.png)
 *Figure 6: Troubleshooting*
 
 ### Troubleshoot: Problem 2
@@ -90,5 +94,8 @@ If the Pymaker console indicates Conecting to ...>> failed to connect (error: Po
 If you can not see the console that allows you to upload your file, if you have not installed the Pymakr plugin do so. If you have already installed thePymakr Plugin but still you cannot see the console do this: File-> Settings-> Install ->  search for Pymakr plugin. Diasble then uninstall it. Now reinstall the Pymakr plugin.
 
 ### Troubleshoot: Problem 4
-Iif you press the play button and you get a no module named error message eg, ImportError: no module named 'pycom' ,first upload the file into the device by using the upload button. After you can press the play button.
+Iif you press the play button(3) and you get a no module named error message eg, ImportError: no module named 'pycom' ,first upload the file into the device by using the upload button. After you can press the play button.
+
+
+## Putting everything together: Wiring sensors
 
