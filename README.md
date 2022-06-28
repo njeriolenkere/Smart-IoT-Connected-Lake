@@ -47,14 +47,14 @@ Connect the Lopy4 to the board 3.1 using pins. Then connect your device (1) to t
 *Figure 4: Source: [Pycom.io](https://docs.pycom.io/)*
 
 ### Step 3: Firmware update
-+ Update your firmware to the latest version to avoid running into issues.  [Upload from here Updating Device Firmware](https://docs.pycom.io/updatefirmware/device/). + Install the downloaded file and open it. Press Continue.
++ Update your firmware to the latest version to avoid running into issues.  [Upload from here Updating Device Firmware](https://docs.pycom.io/updatefirmware/device/). Install the downloaded file and open it. Press Continue.
 + Communication -> type, choose development and press continue.  
 + RESET ->  check the boxes, CONFIG partion  and  NVS Partition, press continue.
 + Advance setting -> on device type, choose your device.  On file system  ->  check the boxes of Erase during update. On LoRa region  ->  choose your country,  press continue. 
 + After a few minutes, you will see results, press done. 
 
 ### Step 4: Setting up Atom
-Open Atom go to file->settings->install->search for Pymakr and then install it. Step by step guide on how to install Pymaker in Atom [Pymakr (here)] https://docs.pycom.io/gettingstarted/software/atom/
+Open Atom go to file->settings->install->search for Pymakr and then install it. Step by step guide on [how to install Pymaker in Atom (here)]https://docs.pycom.io/gettingstarted/software/atom/
 
 ### Step 5: Add project
 On Atom, go to File-> add Project Folder 
