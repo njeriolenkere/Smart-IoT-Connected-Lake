@@ -63,7 +63,7 @@ Give the Project Folder a name eg. lopy. Right click on your Project Folder ->Ne
 ![3COM](https://user-images.githubusercontent.com/50623449/176190060-31a16201-dd67-4b03-9f83-c1dfd7cdcc48.png)
 *Figure 5: Atom project*
 
-Click on the main.py and paste this MicroPython code below and press **ctrl + S** on your keyboard to save it:(It is important to always save a file after pasting/writing it before uploading it to avoid issues)
+Click on the main.py and paste this MicroPython code below and press **ctrl + S** on your keyboard to save it. Important! Always save the file after pasting or writing it before uploading it to avoid errors).
 ```MicroPython
 import pycom
 import time
@@ -91,11 +91,9 @@ If you upload the main.py file but encounter a problem such as >>Upload failed: 
 If the Pymaker console indicates Conecting to ...>> failed to connect (error: Port is not open) Click here to try again, reconnect the micro controller, uninstall and then install the Pymaker. Then upload main.py file. If that doesn't work, it is possible that the Pymarker console did not identify the right COMM port. To solves this, follow this tutorial: [COMM Port Issue solved, Time: 18:25-20:35](https://www.youtube.com/watch?v=BPSxLsorNco&t=1223s)
 
 ### Troubleshoot: Problem 3
-If you can not see the console that allows you to upload your file, if you have not installed the Pymakr plugin do so. If you have already installed thePymakr Plugin but still you cannot see the console do this: File-> Settings-> Install ->  search for Pymakr plugin. Diasble then uninstall it. Now reinstall the Pymakr plugin.
+If you cannot see the console that allows you to upload your file, if you have not installed the Pymakr plugin do so. If you have already installed thePymakr Plugin but still you cannot see the console do this: File-> Settings-> Install ->  search for Pymakr plugin. Diasble then uninstall it. Now reinstall the Pymakr plugin.
 
 ### Troubleshoot: Problem 4
-Iif you press the play button(3) and you get a no module named error message eg, ImportError: no module named 'pycom' ,first upload the file into the device by using the upload button. After you can press the play button.
+If you press the play button(3) and you get a no module named error message eg, ImportError: no module named 'pycom' ,first upload the file into the device by using the upload button. After you can press the play button.
 
-
-## Putting everything together: Wiring sensors
 
