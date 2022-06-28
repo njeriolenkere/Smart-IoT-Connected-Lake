@@ -40,21 +40,21 @@ To complete the tutorial, you can use any Pycom ESP32 development board that sup
 
 ## Computer set up
 ### Step 1: Choosing IDE(Integrated Development Environment)
-I tried using Pycharm IDE but at this time they do not support Pymakr plugin yet hence I download and used Atom IDE for windows because they support the plugin.  Download and install  [Atom (here)](https://atom.io/). Then  download and install [Node js (here)](https://nodejs.org/en/)). After installing both Atom and Node.js, restart you computer. Find a detailed tutorial here : [Pycom](https://docs.pycom.io/)  If you want to use another IDE such as Visual Studio Code IDE follow this easy to follow tutorial : [Visual Studio Code set up](https://www.youtube.com/watch?v=fu_O6gtrDG4) Note: All the softwares used in this project are free.
+I tried using Pycharm IDE but at this time they do not support Pymakr plugin yet hence I download and used Atom IDE for windows because they support the plugin.  Download and install  [Atom (here)](https://atom.io/). Then  download and install [Node js (here)](https://nodejs.org/en/). After installing both Atom and Node.js, restart you computer. Find a detailed tutorial here : [Pycom](https://docs.pycom.io/)  If you want to use another IDE such as Visual Studio Code IDE follow this easy to follow tutorial : [Visual Studio Code set up](https://www.youtube.com/watch?v=fu_O6gtrDG4) Note: All the softwares used in this project are free.
 
 ### Step 2: LoPy4 and development board
 Connect the Lopy4 to the board 3.1 using pins. Then connect your device (1) to the computer using the USB cable (2). ![getting_started](https://user-images.githubusercontent.com/50623449/176187022-14cae240-89fa-4e1b-aaf0-a0b36debb4b3.png)
 *Figure 4: Source: [Pycom.io](https://docs.pycom.io/)*
 
 ### Step 3: Firmware update
-+ Update your firmware to the latest version to avoid running into issues.  [Upload from here Updating Device Firmware (pycom.io)](https://docs.pycom.io/updatefirmware/device/). Install the downloaded file and open it. Press Continue.
++ Update your firmware to the latest version to avoid running into issues.  [Upload from here Updating Device Firmware](https://docs.pycom.io/updatefirmware/device/). + Install the downloaded file and open it. Press Continue.
 + Communication -> type, choose development and press continue.  
 + RESET ->  check the boxes, CONFIG partion  and  NVS Partition, press continue.
 + Advance setting -> on device type, choose your device.  On file system  ->  check the boxes of Erase during update. On LoRa region  ->  choose your country,  press continue. 
 + After a few minutes, you will see results, press done. 
 
 ### Step 4: Setting up Atom
-Open Atom go to file->settings->install->search for Pymakr and then install it. Step by step guide on how to install Pymaker in Atom can be found here:  [Pymakr] https://docs.pycom.io/gettingstarted/software/atom/
+Open Atom go to file->settings->install->search for Pymakr and then install it. Step by step guide on how to install Pymaker in Atom [Pymakr (here)] https://docs.pycom.io/gettingstarted/software/atom/
 
 ### Step 5: Add project
 On Atom, go to File-> add Project Folder 
