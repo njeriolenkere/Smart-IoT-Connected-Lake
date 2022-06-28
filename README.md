@@ -54,7 +54,7 @@ Connect the Lopy4 to the board 3.1 using pins. Then connect your device (1) to t
 + After a few minutes, you will see results, press done. 
 
 ### Step 4: Setting up Atom
-Open Atom go to file->settings->install->search for Pymakr and then install it. Step by step guide on [how to install Pymaker in Atom (here)]https://docs.pycom.io/gettingstarted/software/atom/
+Open Atom go to file->settings->install->search for Pymakr and then install it. Step by step guide on [how to install Pymaker in Atom (here)](https://docs.pycom.io/gettingstarted/software/atom/)
 
 ### Step 5: Add project
 On Atom, go to File-> add Project Folder 
