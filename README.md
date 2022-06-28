@@ -82,7 +82,7 @@ while True:
 Click on the upload button to feed the code to your device. If your device is connected and working properly, the LED light on the Lopy4 will start blinking red, green and blue every second. To stop the blinking of the LED use **ctrl + C** to cancel the while loop.
 
 ### Troubleshoot: Problem 1 
-If you upload the main.py file but encounter a problem such as >>Upload failed: No project open, check (1) to make sure the Project Folder (lopy) is selected and not pymakr. Click the upload button (3) and it should begin blinking.
+If you upload the main.py file but encounter a problem such as >>Upload failed: No project open, check Project Folder (1) to make sure that (lopy) is selected and not pymakr. Click the upload button (3) and your device Pycom should begin blinking.
 
 ![prob1](https://user-images.githubusercontent.com/50623449/176201445-12df694b-68c5-4917-b1b7-e7b39e4a909f.png)
 *Figure 6: Troubleshooting*
@@ -94,6 +94,6 @@ If the Pymaker console indicates Conecting to ...>> failed to connect (error: Po
 If you cannot see the console that allows you to upload your file, if you have not installed the Pymakr plugin do so. If you have already installed thePymakr Plugin but still you cannot see the console do this: File-> Settings-> Install ->  search for Pymakr plugin. Diasble then uninstall it. Now reinstall the Pymakr plugin.
 
 ### Troubleshoot: Problem 4
-If you press the play button(3) and you get a no module named error message eg, ImportError: no module named 'pycom' ,first upload the file into the device by using the upload button. After you can press the play button.
+If you press the play button(3) and you get a no module named error message eg, ImportError: no module named 'pycom' ,first upload the file into the device by using the upload button. After that you can press the play button.
 
 
