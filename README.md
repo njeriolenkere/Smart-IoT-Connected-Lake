@@ -98,6 +98,9 @@ If you cannot see the console that allows you to upload your file, if you have n
 ### Troubleshoot: Problem 4
 If you press the play button(3) and you get a no module named error message eg, ImportError: no module named 'pycom', no worries. Upload the file into the device by using the upload button. After that you can press the play button.
 
+### Troubleshoot: Problem 5
+If the Pymakr console is greyed out, or if you click on the upload button or any button on the console it does not respond, do this. Close the Atom IDE, reopen again and it should work. Sometimes you have to restart the computer for the error to be fixed.
+
 ## Putting everything together: Wiring sensors
 ![circuitFritzing2](https://user-images.githubusercontent.com/50623449/176404191-0260ab4f-dbc3-4005-b829-1f7d2fc848f5.png)
 
