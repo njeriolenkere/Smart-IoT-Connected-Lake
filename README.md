@@ -7,7 +7,7 @@
 * Year: July 2022
 
 ## Project Overview
-The aim of this project is to create a smart IOT connected lake. Using the temperature sensor (DS18B20) and the pH sensor (SEN0161) to measure and send the data collected via WIFI to an  IoT platform(Ubidots) for visualisation. Depending on your level of skill and hardware or software problems, this project can take between 4-48 hours.
+The aim of this tutorial is to teach how to create a smart IOT connected lake. Using the temperature sensor (DS18B20) and the pH sensor (SEN0161) to measure and send the data collected via WIFI to an  IoT platform(Ubidots) for visualisation. Depending on your level of skill and hardware or software problems, this project can take between 4-48 hours.
 
 ![projectOverview](https://user-images.githubusercontent.com/50623449/175966042-1a00d573-fcf9-4389-ac72-350f675e068d.jpg)
 *Figure 1: Project overview*
@@ -22,7 +22,7 @@ The purpose of this system is to measure and gather the data of the lake named T
 
 
 ## Materials: Hardware
-To complete the tutorial, you can use any Pycom ESP32 development board that supports WIFI. In this tutorial we focus on [LoPy4](https://docs.pycom.io/products/) If you are environment conscious, you can purchase cheaper second-hand devices for around 600 Swedish crowns at online stores. If you want to buy new devices like this one [Pycom Basic bundle @ Electrokit](https://www.electrokit.com/produkt/lnu-1dt305-tillampad-iot-fipy-basic-bundle/) , it will cost you up to 1,348 Swedish crowns.
+To complete the tutorial, you can use any Pycom ESP32 development board that supports WIFI. In this tutorial we focus on [LoPy4](https://docs.pycom.io/products/). If you are environment conscious, you can purchase cheaper second-hand devices for around 600 Swedish crowns at online stores. If you want to buy new devices like this one [Pycom Basic bundle @ Electrokit](https://www.electrokit.com/produkt/lnu-1dt305-tillampad-iot-fipy-basic-bundle/) , it will cost you up to 1,348 Swedish crowns.
 
 | Name        | Specifications | Picture        | Store       |
 | :----------- | :-------------- | -------------- | :----------- |
@@ -40,21 +40,22 @@ To complete the tutorial, you can use any Pycom ESP32 development board that sup
 
 ## Computer set up
 ### Step 1: Choosing IDE(Integrated Development Environment)
-I tried using Pycharm IDE but at this time they do not support Pymakr plugin yet hence I download and used Atom IDE for windows because they support the plugin.  Download and install  [Atom (here)](https://atom.io/). Then  download and install [Node js (here)](https://nodejs.org/en/). After installing both Atom and Node.js, restart you computer. Find a detailed tutorial here : [Pycom](https://docs.pycom.io/)  If you want to use another IDE such as Visual Studio Code IDE follow this easy to follow tutorial : [Visual Studio Code set up](https://www.youtube.com/watch?v=fu_O6gtrDG4) Note: All the softwares used in this project are free.
+I tried using Pycharm IDE but at this time they do not support Pymakr plugin yet hence I download and used Atom IDE for windows because they support the plugin.  Download and install  [Atom (here)](https://atom.io/). Then  download and install [Node js (here)](https://nodejs.org/en/). After installing both Atom and Node.js, restart you computer. Find a detailed tutorial here : [Pycom](https://docs.pycom.io/).  If you want to use another IDE such as Visual Studio Code IDE follow this easy to follow tutorial : [Visual Studio Code set up](https://www.youtube.com/watch?v=fu_O6gtrDG4). **Note:** All the softwares used in this project are free.
 
 ### Step 2: LoPy4 and development board
 Connect the Lopy4 to the board 3.1 using pins. Then connect your device (1) to the computer using the USB cable (2). ![getting_started](https://user-images.githubusercontent.com/50623449/176187022-14cae240-89fa-4e1b-aaf0-a0b36debb4b3.png)
 *Figure 4: Source: [Pycom.io](https://docs.pycom.io/)*
 
 ### Step 3: Firmware update
-+ Update your firmware to the latest version to avoid running into issues.  [Upload Firmware for Updating Device (here)](https://docs.pycom.io/updatefirmware/device/). Install the downloaded file and open it. Press Continue.
-+ Communication -> type, choose development and press continue.  
-+ RESET ->  check the boxes, CONFIG partion  and  NVS Partition, press continue.
-+ Advance setting -> on device type, choose your device.  On file system  ->  check the boxes of Erase during update. On LoRa region  ->  choose your country,  press continue. 
+Update your firmware to the latest version to avoid running into issues.  
++ [Download Firmware for Updating Device (here)](https://docs.pycom.io/updatefirmware/device/), Install the downloaded file and open it. Press Continue.
++ Communication -> type, choose **development** and press continue.  
++ RESET ->  check the boxes, **CONFIG Partition  and  NVS Partition**, press continue.
++ Advance setting -> on device type, **choose your device**.  On file system  ->  check the boxes of **Erase during update**. On LoRa region  ->  **choose your country**,  press continue. 
 + After a few minutes, you will see results, press done. 
 
 ### Step 4: Setting up Atom
-Open Atom go to file->settings->install->search for Pymakr and then install it. Step by step guide on [how to install Pymaker in Atom (here)](https://docs.pycom.io/gettingstarted/software/atom/)
+Open Atom go to file->settings->install->search for Pymakr and then install it. Step by step guide on [how to install Pymaker in Atom (here)](https://docs.pycom.io/gettingstarted/software/atom/).
 
 ### Step 5: Add project
 On Atom, go to File-> add Project Folder 
@@ -92,9 +93,120 @@ If you upload the main.py file but encounter a problem such as >>Upload failed: 
 If the Pymaker console indicates Conecting to ...>> failed to connect (error: Port is not open) Click here to try again, reconnect the micro controller, uninstall and then install the Pymaker. Then upload main.py file. If that doesn't work, it is possible that the Pymarker console did not identify the right COMM port. To solves this, follow this tutorial: [COMM Port Issue solved, Time: 18:25-20:35](https://www.youtube.com/watch?v=BPSxLsorNco&t=1223s)
 
 ### Troubleshoot: Problem 3
-If you cannot see the console that allows you to upload your file, if you have not installed the Pymakr plugin do so. If you have already installed thePymakr Plugin but still you cannot see the console do this: File-> Settings-> Install ->  search for Pymakr plugin. Diasble then uninstall it. Now reinstall the Pymakr plugin.
+If you cannot see the console that allows you to upload your file, if you have not installed the Pymakr plugin do so. If you have already installed thePymakr Plugin but still you cannot see the console do this: File-> Settings-> Install ->  search for Pymakr plugin. Disable then uninstall it. Now reinstall the Pymakr plugin.
 
 ### Troubleshoot: Problem 4
-If you press the play button(3) and you get a no module named error message eg, ImportError: no module named 'pycom' ,first upload the file into the device by using the upload button. After that you can press the play button.
+If you press the play button(3) and you get a no module named error message eg, ImportError: no module named 'pycom', no worries. Upload the file into the device by using the upload button. After that you can press the play button.
+
+## Putting everything together: Wiring sensors
+![circuitFritzing2](https://user-images.githubusercontent.com/50623449/176404191-0260ab4f-dbc3-4005-b829-1f7d2fc848f5.png)
+
+*Figure 7: Circuit diagram* 
+
+After successful completion of all the above steps, it is time to connect sensors and power them up. The data transfer cord (yellow) of pH sensor (SEN0161) connected to pin 16, while temperature sensor (DS18B20) data transfer cord (yellow) is connected to Pin 22. To learn more about Pins, [read LoPy Datasheet (here)](https://docs.pycom.io/gitbook/assets/lopy4-pinout.pdf). 
+The temperature sensor (DS18B20) requires a pull-up resistor (4.7 Ohm ) that will be connected between the data transfer cord and the power pin(red). The power cord(red) and ground cord (black)of the pH sensor (SEN0161) and the temperature sensor (DS18B20) are connected at the lower lane. The black cord(GND) and the the red cord(3v 3) from the expansion board is connected to the breadboard at the lower lane to power up the whole lower lane with 3.3v power.
+Check the datasheet of the hardware you have to determine things like the power requirement, resistor and the pins allocation.
+
+## IoT visualisation Platform
+I chose Ubidots since it offers both free (Ubidots STEM ) for students and personal use and paid subscription(For Business). The free Ubidots STEM is good for beginners since it has tutorials, offer 3 devices connection for free, no plugins required in-order to get started, neat real-time dashboard with many different widgets types, hosted on the cloud, good user interface design and easy to create events that triggers notifications via Email, SMS, Telegram, Voice calls, Webhooks or Slack notifications.  
+
+![ubidots](https://user-images.githubusercontent.com/50623449/176404955-bb6d9ba2-3b66-4363-ae2c-a673ea5e76f6.png)
+
+*Figure 8: IoT  visualisation platform | Ubidots*
+
+The paid subscription(For Business) offers multiple device connection among other many important features that are good for Entrepreneurs , Professionals and Industries.
+
+## The code : Software
+We will use this libraries; urequest.py library is for Ubidots, while onewire.py library is for temperature sensor (DS18B20). So create a library file by right clicking on the Project Folder(lopy)  -> New folder. Name it lib.  Right click on lib  ->New File write urequests.py, click enter. Repeat the same procedure in-order create a onewire.py file.  
+On Atom, click the urequests.py file and [copy this urequests.py code](https://github.com/njeriolenkere/Smart-IoT-Connected-Lake/blob/main/urequests.py) paste it and save. Click the onewire.py  file, [copy this onewire.py code](https://github.com/njeriolenkere/Smart-IoT-Connected-Lake/blob/main/onewire.py) paste it and save it.   Find the full code here: [Smart-IoT-Connected-Lake code (here)](https://github.com/njeriolenkere/Smart-IoT-Connected-Lake).  If you have done everything correctly, the your code structure should be organised as showned on *Figure 9*.
+
+![lib](https://user-images.githubusercontent.com/50623449/176406650-57082fa6-8855-4b2a-8ab9-cd8396dcc1db.png)
+
+*Figure 9: The code structure*
+
+### main.py code
+This main.py code does the following, imports libraries, set up network, collects data from the pH sensor (SEN0161) and the temperature sensor (DS18B20) and send that data to Ubidots via WIFI.
+
+```MicroPython
+import time
+import pycom
+import machine
+from machine import Pin, I2C, ADC, I2C, PWM
+from onewire import DS18X20 #Library for dealing with DS18X20 sensors
+from onewire import OneWire #Library for Onewire
+from network import WLAN
+import urequests as requests  #Call library urequests file
+from config import SSID, PASS, TOKEN #Call config file that contains your ssid, password and token
 
 
+pycom.heartbeat(False) # We disable LED heartbeat to control it manually
+pycom.rgbled(0x00FF00)  # LED turns Green
+
+# Builds the json to send the request
+def build_json(variable1, value1, variable2, value2):
+    try:
+        data = {variable1: {"value": value1},
+                variable2: {"value": value2}}
+        return data
+    except:
+        return None
+
+# Sends the request. Please reference the REST API reference https://ubidots.com/docs/api/
+def post_var(device, value1, value2):
+    try:
+        url = "https://industrial.api.ubidots.com/"
+        url = url + "api/v1.6/devices/" + device
+        headers = {"X-Auth-Token": TOKEN, "Content-Type": "application/json"}
+        data = build_json("temperature", value1, "pH", value2)
+        if data is not None:
+            print(data)
+            req = requests.post(url=url, headers=headers, json=data)
+            return req.json()
+        else:
+            pass
+    except:
+        pass
+
+# set up pH sensor
+adc = machine.ADC(bits=10)# ADC (Analogue to Digital Conversion)
+apin = adc.channel(pin='P16') # create an analog pin on P16
+
+# set up Temperature sensor
+ow = OneWire(Pin('P22')) # DS18B20 data line connected to pin P22
+temp = DS18X20(ow)
+
+# WiFi Declaration
+wlan = WLAN(mode=WLAN.STA)
+# Assign your own Wi-Fi credentials (SSID and Password = PASS)
+wlan.connect(SSID, auth=(WLAN.WPA2, PASS))
+while not wlan.isconnected():
+    machine.idle()
+print("Connected to Wifi\n")
+
+while True:
+    millivolts = apin.voltage()  # Reads the voltage in mV
+    print(millivolts)
+    # Data values
+    pH = millivolts / 1024 * 5 * 1.45   # Calculates the pH
+    print(pH)
+    print("pH is: {}".format(pH))
+    time.sleep(5)
+    temp.start_conversion()
+    time.sleep(1)     # Start the temp conversion on one DS18x20 device
+    temperature = temp.read_temp_async()    # Read the temperature of one DS18x20 device if the conversion is complete, otherwise return None.
+    while temperature is None:
+        temperature = temp.read_temp_async()
+    print("Temperature is: {}".format(temperature))
+
+    # Post data to Ubidots
+    post_var("pycom", temperature, pH)
+    time.sleep(900) #send every 15 mins
+   ```
+## Transmitting data
+
+The wireless protocol used in this project is WIFI. WIFI allows devices to connect to internet via a router. WIFI has high bit rate which is good to send data fast, it short range and consumes more power. Since the device is connect to computer via USB charger, high power consumption is OK. In this project we use WIFI at 2.4GHz that provide internet to large area but alittle bit slow compared to 5 Ghz.
+The transport protocol used is WebHook (HTTP) that packages data as  JSON object and sends that data to Ubidot. The data is sent every 15 minutes. 
+
+![CommTech](https://user-images.githubusercontent.com/50623449/176409605-35d3f4a1-2855-4ca8-9a1a-cbde1c4249df.jpg)
+
+*Figure 10: Communication technologies [source:Communication Technologies (avsystem.com)*](https://www.avsystem.com/blog/iot-connectivity/)
