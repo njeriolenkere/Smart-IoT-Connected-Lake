@@ -64,7 +64,7 @@ Give the Project Folder a name eg. lopy. Right click on your Project Folder ->Ne
 ![3COM](https://user-images.githubusercontent.com/50623449/176190060-31a16201-dd67-4b03-9f83-c1dfd7cdcc48.png)
 *Figure 5: Atom project*
 
-Click on the main.py and paste this MicroPython code below and press **ctrl + S** on your keyboard to save it. Important! Always save the file after pasting or writing it before uploading it to avoid errors).
+Click on the main.py and paste this MicroPython code below and press **ctrl + S** on your keyboard to save it. **Important!!!** Always save the file after pasting or writing it before uploading it to avoid errors).
 ```MicroPython
 import pycom
 import time
@@ -204,8 +204,8 @@ while True:
    ```
 ## Transmitting data
 
-The wireless protocol used in this project is WIFI. WIFI allows devices to connect to internet via a router. WIFI has high bit rate which is good to send data fast, it short range and consumes more power. Since the device is connect to computer via USB charger, high power consumption is OK. In this project we use WIFI at 2.4GHz that provide internet to large area but alittle bit slow compared to 5 Ghz.
-The transport protocol used is WebHook (HTTP) that packages data as  JSON object and sends that data to Ubidot. The data is sent every 15 minutes. 
+The wireless protocol used in this project is WIFI. WIFI allows devices to connect to internet via a router. WIFI has high bit rate which is good to send data fast, it short range and consumes more power. Since the device is connect to computer via USB charger, high power consumption is OK. In this project we use WIFI at 2.4GHz that provide internet to large area but alittle bit slow compared to 5 Ghz. **Note:** If your wireless router does not support 2.4GHZ, you can use your phone as a WIFI hotspot. Read more on [How to Connect to Mobile WIFI (here)](https://www.businessinsider.com/what-is-mobile-hotspot?r=US&IR=T).
+The transport protocol used is WebHook (HTTP) that packages data as JSON object and sends that data to Ubidot. The data from the sensors is sent every 15 minutes. 
 
 ![CommTech](https://user-images.githubusercontent.com/50623449/176409605-35d3f4a1-2855-4ca8-9a1a-cbde1c4249df.jpg)
 
