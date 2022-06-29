@@ -209,4 +209,4 @@ The transport protocol used is WebHook (HTTP) that packages data as  JSON object
 
 ![CommTech](https://user-images.githubusercontent.com/50623449/176409605-35d3f4a1-2855-4ca8-9a1a-cbde1c4249df.jpg)
 
-*Figure 10: Communication technologies [source:Communication Technologies (avsystem.com)*](https://www.avsystem.com/blog/iot-connectivity/)
+*Figure 10: Communication technologies [source:Communication Technologies (avsystem.com)](https://www.avsystem.com/blog/iot-connectivity/)*
