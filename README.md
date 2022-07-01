@@ -61,7 +61,9 @@ Open Atom go to file->settings->install->search for Pymakr and then install it. 
 On Atom, go to File-> add Project Folder 
 Give the Project Folder a name eg. lopy. Right click on your Project Folder ->New File-> write main.py, click enter. Repeat the same procedure inorder create a boot.py file and config.py file.
 
-![3COM](https://user-images.githubusercontent.com/50623449/176190060-31a16201-dd67-4b03-9f83-c1dfd7cdcc48.png)
+
+![3COM](https://user-images.githubusercontent.com/50623449/176900596-343f26eb-5b53-41c6-ab70-2f3014c9dec6.png)
+
 *Figure 5: Atom project*
 
 Click on the main.py and paste this MicroPython code below and press **ctrl + S** on your keyboard to save it. **Important!!!** Always save the file after pasting or writing it before uploading it to avoid errors).
@@ -90,16 +92,16 @@ If you upload the main.py file but encounter a problem such as >>Upload failed: 
 *Figure 6: Troubleshooting*
 
 ### Troubleshoot: Problem 2
-If the Pymaker console indicates Conecting to ...>> failed to connect (error: Port is not open) Click here to try again, reconnect the micro controller, uninstall and then install the Pymaker. Then upload main.py file. If that doesn't work, it is possible that the Pymarker console did not identify the right COMM port. To solves this, follow this tutorial: [COMM Port Issue solved, Time: 18:25-20:35](https://www.youtube.com/watch?v=BPSxLsorNco&t=1223s)
+If the REPL console indicates Conecting to ...>> failed to connect (error: Port is not open) Click here to try again, reconnect the micro controller, uninstall and then install the Pymaker. Then upload main.py file. If that doesn't work, it is possible that the REPL console did not identify the right COMM port. To solves this, follow this tutorial: [COMM Port Issue solved, Time: 18:25-20:35](https://www.youtube.com/watch?v=BPSxLsorNco&t=1223s)
 
 ### Troubleshoot: Problem 3
-If you cannot see the console that allows you to upload your file, if you have not installed the Pymakr plugin do so. If you have already installed thePymakr Plugin but still you cannot see the console do this: File-> Settings-> Install ->  search for Pymakr plugin. Disable then uninstall it. Now reinstall the Pymakr plugin.
+If you cannot see the REPL console that allows you to upload your file, it is possible that you have not installed the Pymakr plugin, do so. If you have already installed thePymakr Plugin but still you cannot see the REPL console do this: File-> Settings-> Install ->  search for Pymakr plugin. Disable then uninstall it. Now reinstall the Pymakr plugin.
 
 ### Troubleshoot: Problem 4
 If you press the play button(3) and you get a no module named error message eg, ImportError: no module named 'pycom', no worries. Upload the file into the device by using the upload button. After that you can press the play button.
 
 ### Troubleshoot: Problem 5
-If the Pymakr console is greyed out, or if you click on the upload button or any button on the console it does not respond, do this. Close the Atom IDE, reopen again and it should work. Sometimes you have to restart the computer for the error to be fixed.
+If the REPL console is greyed out, or if you click on the upload button or any button on the console it does not respond, do this. Close the Atom IDE, reopen again and it should work. Sometimes you have to restart the computer or reinstall the Pymakr plugin for the error to be fixed.
 
 ## Putting everything together: Wiring sensors
 
