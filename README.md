@@ -265,6 +265,6 @@ Here is the final project.
 *Figure 18: Sensors in the water*
 
 ### Future
-I would recommend to anyone interested in [Internet of Things (IoT)](https://lnu.se/en/course/introduction-to-applied-internet-of-things/distance-international-summer/), smart things to study Applied Internet of Things  at [Linneaus University](https://lnu.se/en/). The workshops, guest lectures, amazing lecturers, quick help and feed back made the course excellent. The course opened me up to opportunities on what can be achieved with IoT. In the future, I hope to expand more on this project by adding more devices such as Oled display and sensors. I plan to also to create other smart devices e.g. the Smart Garden.
+I would recommend anyone interested in Internet of Things (IoT), smart things to study [Applied Internet of Things](https://lnu.se/en/course/introduction-to-applied-internet-of-things/distance-international-summer/)  at the [Linneaus University](https://lnu.se/en/). The flexible workshops, guest lectures, amazing lecturers and TAs, quick help and fast feedback made the course excellent. The course opened me up to opportunities on what can be achieved with IoT. In the future, I hope to expand more on this project by adding more devices such as Oled display and sensors. I plan to also to create other smart devices e.g. the Smart Garden.
 
 Have a Smart Summer!
