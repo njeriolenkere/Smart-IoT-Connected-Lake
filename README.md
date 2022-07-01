@@ -50,8 +50,7 @@ Connect the Lopy4 to the board 3.1 using pins. Then connect your device (1) to t
 Update your firmware to the latest version to avoid running into issues.  
 + [Download Firmware for Updating Device (here)](https://docs.pycom.io/updatefirmware/device/), Install the downloaded file and open it. Press Continue.
 + Communication -> type, choose **development** and press continue.  
-+ RESET ->  check the boxes, **CONFIG Partition  and  NVS Partition**, press continue.
-+ Advance setting -> on device type, **choose your device**.  On file system  ->  check the boxes of **Erase during update**. On LoRa region  ->  **choose your country**,  press continue. 
++ Advance setting -> on device type, **choose your device**.  On file system  ->  check the boxes of **Erase during update**.  on RESET ->  check the boxes, **CONFIG Partition  and  NVS Partition**, On LoRa region  ->  **choose your country**,  press continue. 
 + After a few minutes, you will see results, press done. 
 
 ### Step 4: Setting up Atom
