@@ -220,39 +220,31 @@ In this project we use WIFI at 2.4GHz that provide internet to large area but al
 Congratulations! You finally made it! This is the last part of the tutorial. Follow this guide to learn how to create dashboards and widgets in Ubidots.  [Guide on how to create Dashboards and Widgets (here)](https://help.ubidots.com/en/articles/2400308-create-dashboards-and-widgets). Below is how data is represented in Ubidots dashboard.
 
 ![dashboardDevices](https://user-images.githubusercontent.com/50623449/176837032-9b0d3f75-5a05-4b45-bdf7-ad87aef38bef.png)
-
 *Figure 11:  Dashboard*
 
 ![dashboardIOT](https://user-images.githubusercontent.com/50623449/176837361-542f5359-40fa-45fc-9405-d4fab0111801.png)
-
 *Figure 12: Sensors information on dashboard*
 
 ![eventsIOT](https://user-images.githubusercontent.com/50623449/176837443-c6888678-6126-43e2-9c1d-704f3fa90fa0.png)
-
 *Figure 13: Events that sends triggers alerts*
 
 The device automatically sends data after every 15 minutes which triggers the alerts that are sent via email. The data sent is stored for a month at the Ubidots which is a Cloud service. Check their help Center: [Ubidots data storage info (here)](https://help.ubidots.com/en/articles/636669-how-long-is-my-data-stored-for)
 
 ![alerts](https://user-images.githubusercontent.com/50623449/176837655-432246f8-2111-4855-b2d8-b498ed9509ad.png)
-
 *Figure 14: Email alerts*
 
 ## The final project
 Here is the final project.
 ![finalProject1](https://user-images.githubusercontent.com/50623449/176839215-f296a076-8dec-4608-95b6-d82727f9e342.jpg)
-
 *Figure 15: Tröllsjön, Tranås in Sweden*
 
 ![finalProject2](https://user-images.githubusercontent.com/50623449/176839342-21dbfb0b-eb89-4885-84e4-8cf2108e95ac.jpg)
-
 *Figure 16: Smart IoT connected Lake (Tröllsjön)*
 
 ![finalProject3](https://user-images.githubusercontent.com/50623449/176839465-4ebb2251-47c5-42d8-857d-58986d050b39.jpg)
-
 *Figure 17: Real-time data visualisation on the dashboard*
 
 ![finalProject4](https://user-images.githubusercontent.com/50623449/176839548-55014f10-3f40-4bda-94cb-c6d2e455d613.jpg)
-
 *Figure 18: Sensors in the water*
 
 ### Future
