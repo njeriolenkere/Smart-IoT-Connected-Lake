@@ -1,7 +1,7 @@
 import time
 import pycom
 import machine
-from machine import Pin, I2C, ADC, I2C, PWM
+from machine import Pin, I2C, ADC, PWM
 from onewire import DS18X20 #Library for dealing with DS18X20 sensors
 from onewire import OneWire #Library for Onewire
 from network import WLAN
