@@ -102,12 +102,14 @@ If you press the play button(3) and you get a no module named error message eg, 
 If the Pymakr console is greyed out, or if you click on the upload button or any button on the console it does not respond, do this. Close the Atom IDE, reopen again and it should work. Sometimes you have to restart the computer for the error to be fixed.
 
 ## Putting everything together: Wiring sensors
-![circuitFritzing2](https://user-images.githubusercontent.com/50623449/176404191-0260ab4f-dbc3-4005-b829-1f7d2fc848f5.png)
+
+![circuitFritzing2](https://user-images.githubusercontent.com/50623449/176835647-4f959a45-efa3-4bcb-9920-134b1f95ca0b.png)
 
 *Figure 7: Circuit diagram* 
 
 After successful completion of all the above steps, it is time to connect sensors and power them up. The data transfer cord (yellow) of pH sensor (SEN0161) connected to pin 16, while temperature sensor (DS18B20) data transfer cord (yellow) is connected to Pin 22. To learn more about Pins, [read LoPy Datasheet (here)](https://docs.pycom.io/gitbook/assets/lopy4-pinout.pdf). 
-The temperature sensor (DS18B20) requires a pull-up resistor (4.7 Ohm ) that will be connected between the data transfer cord and the power pin(red). The power cord(red) and ground cord (black)of the pH sensor (SEN0161) and the temperature sensor (DS18B20) are connected at the lower lane. The black cord(GND) and the the red cord(3v 3) from the expansion board is connected to the breadboard at the lower lane to power up the whole lower lane with 3.3v power.
+The temperature sensor (DS18B20) requires a pull-up resistor (4.7 Ohm) that will be connected between the data transfer cord and the power pin(red).  The reson why we use a pull-up resistor is because  temperature sensor (DS18B20) is a one wire device. One wire devices require resistors to be connected to the data signal line sothat data is read correctly by the sensor.
+The power cord(red) and ground cord (black)of the pH sensor (SEN0161) and the temperature sensor (DS18B20) are connected at the lower lane. The black cord(GND) and the the red cord(3v 3) from the expansion board is connected to the breadboard at the lower lane to power up the whole lower lane with 3.3v power.
 Check the datasheet of the hardware you have to determine things like the power requirement, resistor and the pins allocation.
 
 ## IoT visualisation Platform
@@ -203,13 +205,57 @@ while True:
 
     # Post data to Ubidots
     post_var("pycom", temperature, pH)
-    time.sleep(900) #send every 15 mins
+    time.sleep(900) #sends data to ubidots every 15 mins
    ```
 ## Transmitting data
 
-The wireless protocol used in this project is WIFI. WIFI allows devices to connect to internet via a router. WIFI has high bit rate which is good to send data fast, it short range and consumes more power. Since the device is connect to computer via USB charger, high power consumption is OK. In this project we use WIFI at 2.4GHz that provide internet to large area but alittle bit slow compared to 5 Ghz. **Note:** If your wireless router does not support 2.4GHZ, you can use your phone as a WIFI hotspot. Read more on [How to Connect to Mobile WIFI (here)](https://www.businessinsider.com/what-is-mobile-hotspot?r=US&IR=T).
-The transport protocol used is WebHook (HTTPs) that packages data as JSON object and sends that data to Ubidot. The data from the sensors is sent every 15 minutes. 
+The wireless protocol used in this project is WIFI. WIFI allows devices to connect to internet via a router. WIFI has high bit rate which is good to send data fast, it is short range and consumes more power. Since the device is connect to computer via USB charger, high power consumption is OK.
+In this project we use WIFI at 2.4GHz that provide internet to large area but alittle bit slow compared to 5 Ghz. **Note:** If your wireless router does not support 2.4GHZ, you can use your phone as a WIFI hotspot. Read more on [How to Connect to Mobile WIFI (here)](https://www.businessinsider.com/what-is-mobile-hotspot?r=US&IR=T). The transport protocol used is WebHook (HTTPs) that packages data as JSON object and sends that data to Ubidot every 15 minutes. 
 
 ![CommTech](https://user-images.githubusercontent.com/50623449/176409605-35d3f4a1-2855-4ca8-9a1a-cbde1c4249df.jpg)
 
-*Figure 10: Communication technologies [source:Communication Technologies (avsystem.com)](https://www.avsystem.com/blog/iot-connectivity/)*
+*Figure 10: Communication technologies [source: avsystem.com](https://www.avsystem.com/blog/iot-connectivity/)*
+
+## Presenting data
+Congratulations! You finally made it! This is the last part of the tutorial. Follow this guide to learn how to create dashboards and widgets in Ubidots.  [Guide on how to create Dashboards and Widgets (here)](https://help.ubidots.com/en/articles/2400308-create-dashboards-and-widgets). Below is how data is represented in Ubidots dashboard.
+
+![dashboardDevices](https://user-images.githubusercontent.com/50623449/176837032-9b0d3f75-5a05-4b45-bdf7-ad87aef38bef.png)
+
+*Figure 11:  Dashboard*
+
+![dashboardIOT](https://user-images.githubusercontent.com/50623449/176837361-542f5359-40fa-45fc-9405-d4fab0111801.png)
+
+*Figure 12: Sensors information on dashboard*
+
+![eventsIOT](https://user-images.githubusercontent.com/50623449/176837443-c6888678-6126-43e2-9c1d-704f3fa90fa0.png)
+
+*Figure 13: Events that sends triggers alerts*
+
+The device automatically sends data after every 15 minutes which triggers the alerts that are sent via email. The data sent is stored for a month at the Ubidots which is a Cloud service. Check their help Center: [Ubidots data storage info (here)](https://help.ubidots.com/en/articles/636669-how-long-is-my-data-stored-for)
+
+![alerts](https://user-images.githubusercontent.com/50623449/176837655-432246f8-2111-4855-b2d8-b498ed9509ad.png)
+
+*Figure 14: Email alerts*
+
+## The final project
+Here is the final project.
+![finalProject1](https://user-images.githubusercontent.com/50623449/176839215-f296a076-8dec-4608-95b6-d82727f9e342.jpg)
+
+*Figure 15: Tröllsjön, Tranås in Sweden*
+
+![finalProject2](https://user-images.githubusercontent.com/50623449/176839342-21dbfb0b-eb89-4885-84e4-8cf2108e95ac.jpg)
+
+*Figure 16: Smart IoT connected Lake (Tröllsjön)*
+
+![finalProject3](https://user-images.githubusercontent.com/50623449/176839465-4ebb2251-47c5-42d8-857d-58986d050b39.jpg)
+
+*Figure 17: Real-time data visualisation on the dashboard*
+
+![finalProject4](https://user-images.githubusercontent.com/50623449/176839548-55014f10-3f40-4bda-94cb-c6d2e455d613.jpg)
+
+*Figure 18: Sensors in the water*
+
+### Future
+I would recommend to anyone interested in [Internet of Things (IoT)](https://lnu.se/en/course/introduction-to-applied-internet-of-things/distance-international-summer/), smart things to study Applied Internet of Things  at [Linneaus University](https://lnu.se/en/). The workshops, guest lectures, amazing lecturers, quick help and feed back made the course excellent. The course opened me up to opportunities on what can be achieved with IoT. In the future, I hope to expand more on this project by adding more devices such as Oled display and sensors. I plan to also other smart devices e.g. the Smart Garden.
+
+Have a Smart Summer!
