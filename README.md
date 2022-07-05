@@ -218,7 +218,7 @@ In this project we use WIFI at 2.4GHz that provide internet to large area but al
 *Figure 10: Communication technologies [source: avsystem.com](https://www.avsystem.com/blog/iot-connectivity/)*
 
 ## Presenting data
-Congratulations! You finally made it! This is the last part of the tutorial. Follow this guide to learn how to create dashboards and widgets in Ubidots.  [Guide on how to create Dashboards and Widgets (here)](https://help.ubidots.com/en/articles/2400308-create-dashboards-and-widgets). Data is sent and saved every 15 minutes. Data retention in Ubidots is 1 month. Below is how data is represented in Ubidots.
+Congratulations! You finally made it! This is the last part of the tutorial. Follow this guide to learn how to create dashboards and widgets in Ubidots.  [Guide on how to create Dashboards and Widgets (here)](https://help.ubidots.com/en/articles/2400308-create-dashboards-and-widgets). Data is sent and saved every 15 minutes.  Below is how data is represented in Ubidots.
 
 ![dashboardDevices](https://user-images.githubusercontent.com/50623449/176837032-9b0d3f75-5a05-4b45-bdf7-ad87aef38bef.png)
 
