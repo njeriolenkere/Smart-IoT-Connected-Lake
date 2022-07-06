@@ -226,8 +226,8 @@ The wireless protocol used in this project is WIFI. WIFI allows devices to conne
 In this project we use WIFI at 2.4GHz that provide internet to large area but alittle bit slow compared to 5 Ghz. **Note:** If your wireless router does not support 2.4GHZ, you can use your phone as a WIFI hotspot. Read more on [How to Connect to Mobile WIFI (here)](https://www.businessinsider.com/what-is-mobile-hotspot?r=US&IR=T). The transport protocol used is WebHook (HTTPs) that packages data as JSON object and sends that data to Ubidot every 15 minutes. 
 
 ### Security
-+ Config.py file was created to store password, Token and the SSID so that they are not sniffed over the the internet.
-+ HTTPs is used insted of HTTP because it is secure. HTTP transfers data in plain text while HTTPS transfers data in cipher text. [(source): What is Difference Between HTTP and HTTPS?](https://www.guru99.com/difference-http-vs-https.html)
++ Config.py file was created to store password, Token and the SSID so that they are not sniffed over the network.
++ HTTPs is used instead of HTTP because it is secure. HTTP transfers data in plain text while HTTPS transfers data in cipher text. [(source): What is Difference Between HTTP and HTTPS?](https://www.guru99.com/difference-http-vs-https.html)
 
 ![CommTech](https://user-images.githubusercontent.com/50623449/176409605-35d3f4a1-2855-4ca8-9a1a-cbde1c4249df.jpg)
 
@@ -282,6 +282,6 @@ Here is the final project.
 *Figure 19: Sensors in the water*
 
 ### Future
-Despite the hardware problems, I am very happy to finish this project. I would recommend anyone interested in Internet of Things (IoT), smart things to study [Applied Internet of Things](https://lnu.se/en/course/introduction-to-applied-internet-of-things/distance-international-summer/)  at the [Linneaus University](https://lnu.se/en/). The flexible workshops, guest lectures, amazing lecturers and TAs, helpful students, quick support and fast feedback made the course excellent. The course opened me up to opportunities on what can be achieved with IoT. In the future, I hope to expand more on this project by adding more devices such as Oled display and sensors. I plan to also create other smart devices e.g. the Smart Garden.
+Despite the hardware problems, I am very happy to finish this project. I would recommend anyone interested in Internet of Things (IoT), smart things to study [Applied Internet of Things](https://lnu.se/en/course/introduction-to-applied-internet-of-things/distance-international-summer/)  at the [Linneaus University](https://lnu.se/en/). The flexible workshops, guest lectures, amazing lecturers and TAs, helpful students, quick support and fast feedback made the course excellent. The course opened me up to opportunities on what can be achieved with IoT. In the future, I hope to expand more on this project by adding more devices such as Oled display and sensors, create other smart devices e.g. the Smart Garden and try other communications technologies for data transmission.
 
 Have a Smart Summer!
