@@ -69,7 +69,7 @@ Give the Project Folder a name eg. lopy. Right click on your Project Folder ->Ne
 *Figure 5: Atom project*
 
 Click on the main.py and paste this MicroPython code below and press **ctrl + S** on your keyboard to save it. **Important!!!** Always save the file after pasting or writing it before uploading it to avoid errors).
-```MicroPython
+```Python
 import pycom
 import time
 
@@ -128,7 +128,7 @@ I chose Ubidots since it offers both free (Ubidots STEM ) for students and perso
 The paid subscription(For Business) offers multiple device connection among other many important features that are good for Entrepreneurs , Professionals and Industries.
 
 ### PyBytes
-Pybytes is a device management platform that empowers you by giving you full control over your Pycom devices. With Pybytes you have control over your device’s data stream and more. [(source)](https://docs.pycom.io/pybytes/). PyBytes has a simple dashboard however due to time factor, I did not get to use it after using Ubidots. 
+Pybytes is a device management platform that empowers you by giving you full control over your Pycom devices. With Pybytes you have control over your device’s data stream and more. [(source)](https://docs.pycom.io/pybytes/).  It is customisable, you can set up key performance indicators data from all your sensors, Keep track of your device’s status and battery level. PyBytes has a simple dashboard however due to time factor, I did not get to use it after using Ubidots. 
 
 ![PyBytes](https://user-images.githubusercontent.com/50623449/177572342-0bc784a8-13e8-4e84-b359-4cba427c53ed.png)
 
@@ -145,7 +145,7 @@ On Atom, click the urequests.py file and [copy this urequests.py code](https://g
 ### main.py code
 This main.py code does the following, imports libraries, set up network, collects data from the pH sensor (SEN0161) and the temperature sensor (DS18B20) and send that data to Ubidots via WIFI.
 
-```MicroPython
+```Python
 import time
 import pycom
 import machine
@@ -222,8 +222,8 @@ while True:
    ```
 ## Transmitting data
 
-The wireless protocol used in this project is WIFI. WIFI allows devices to connect to internet via a router. WIFI has high bit rate which is good to send data fast, it is short range and consumes more power. Since the device is connect to computer via USB charger, high power consumption is OK.
-In this project we use WIFI at 2.4GHz that provide internet to large area but alittle bit slow compared to 5 Ghz. **Note:** If your wireless router does not support 2.4GHZ, you can use your phone as a WIFI hotspot. Read more on [How to Connect to Mobile WIFI (here)](https://www.businessinsider.com/what-is-mobile-hotspot?r=US&IR=T). The transport protocol used is WebHook (HTTPs) that packages data as JSON object and sends that data to Ubidot every 15 minutes. 
+The wireless protocol used in this project is WIFI. WIFI allows devices to connect to internet via a router. WIFI has high bit rate which is good to send data fast, it is short range and consumes more power. Since the device is connect to computer via USB charger, high power consumption by WIFI is OK: See *Figure 11*. For security reasons, config.py file was created to store password, Token and the SSID so that they are not sniffed over the the internet.
+In this project we use WIFI at 2.4GHz that provide internet to large area but alittle bit slow compared to 5 Ghz. **Note:** If your wireless router does not support 2.4GHZ, you can use your phone as a WIFI hotspot. Read more on [How to Connect to Mobile WIFI (here)](https://www.businessinsider.com/what-is-mobile-hotspot?r=US&IR=T). The transport protocol used is WebHook (HTTPs) that packages data as JSON object and sends that data to Ubidot every 15 minutes. Note: For added security, HTTPs is used insted of HTTP because it is secure. HTTP transfers data in plain text while HTTPS transfers data in cipher text. [source: What is Difference Between HTTP and HTTPS?](https://www.guru99.com/difference-http-vs-https.html)
 
 ![CommTech](https://user-images.githubusercontent.com/50623449/176409605-35d3f4a1-2855-4ca8-9a1a-cbde1c4249df.jpg)
 
@@ -231,7 +231,7 @@ In this project we use WIFI at 2.4GHz that provide internet to large area but al
 
 ## Presenting data
 
-Congratulations! You finally made it! This is the last part of the tutorial. Follow this guide to learn how to create dashboards and widgets in Ubidots.  [Guide on how to create Dashboards and Widgets (here)](https://help.ubidots.com/en/articles/2400308-create-dashboards-and-widgets). The device automatically sends data after every 15 minutes which triggers the alerts that are sent via email. The data sent is stored for a month at the Ubidots database which is a Cloud service. Check their help Center: [Ubidots data storage info (here)](https://help.ubidots.com/en/articles/636669-how-long-is-my-data-stored-for).
+Congratulations! You finally made it! This is the last part of the tutorial. Follow this guide to learn how to create dashboards and widgets in Ubidots.  [Guide on how to create Dashboards and Widgets (here)](https://help.ubidots.com/en/articles/2400308-create-dashboards-and-widgets). The device automatically sends data after every 15 minutes which triggers the alerts that are sent via email. [The data sent is stored](https://help.ubidots.com/en/articles/636669-how-long-is-my-data-stored-for) in the Ubidots's [MongoDB](https://ubidots.com/blog/designing-for-the-internet-of-things/) for a month.
 
 ![dashboardDevices](https://user-images.githubusercontent.com/50623449/176837032-9b0d3f75-5a05-4b45-bdf7-ad87aef38bef.png)
 
