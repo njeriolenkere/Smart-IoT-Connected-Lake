@@ -222,8 +222,12 @@ while True:
    ```
 ## Transmitting data
 
-The wireless protocol used in this project is WIFI. WIFI allows devices to connect to internet via a router. WIFI has high bit rate which is good to send data fast, it is short range and consumes more power. Since the device is connect to computer via USB charger, high power consumption by WIFI is OK: See *Figure 11*. For security reasons, config.py file was created to store password, Token and the SSID so that they are not sniffed over the the internet.
-In this project we use WIFI at 2.4GHz that provide internet to large area but alittle bit slow compared to 5 Ghz. **Note:** If your wireless router does not support 2.4GHZ, you can use your phone as a WIFI hotspot. Read more on [How to Connect to Mobile WIFI (here)](https://www.businessinsider.com/what-is-mobile-hotspot?r=US&IR=T). The transport protocol used is WebHook (HTTPs) that packages data as JSON object and sends that data to Ubidot every 15 minutes. Note: For added security, HTTPs is used insted of HTTP because it is secure. HTTP transfers data in plain text while HTTPS transfers data in cipher text. [source: What is Difference Between HTTP and HTTPS?](https://www.guru99.com/difference-http-vs-https.html)
+The wireless protocol used in this project is WIFI. WIFI allows devices to connect to internet via a router. WIFI has high bit rate which is good to send data fast, it is short range and consumes more power. Since the device is connect to computer via USB charger, high power consumption by WIFI is OK: See *Figure 11*. 
+In this project we use WIFI at 2.4GHz that provide internet to large area but alittle bit slow compared to 5 Ghz. **Note:** If your wireless router does not support 2.4GHZ, you can use your phone as a WIFI hotspot. Read more on [How to Connect to Mobile WIFI (here)](https://www.businessinsider.com/what-is-mobile-hotspot?r=US&IR=T). The transport protocol used is WebHook (HTTPs) that packages data as JSON object and sends that data to Ubidot every 15 minutes. 
+
+### Security
++ Config.py file was created to store password, Token and the SSID so that they are not sniffed over the the internet.
++ HTTPs is used insted of HTTP because it is secure. HTTP transfers data in plain text while HTTPS transfers data in cipher text. [(source): What is Difference Between HTTP and HTTPS?](https://www.guru99.com/difference-http-vs-https.html)
 
 ![CommTech](https://user-images.githubusercontent.com/50623449/176409605-35d3f4a1-2855-4ca8-9a1a-cbde1c4249df.jpg)
 
@@ -231,7 +235,7 @@ In this project we use WIFI at 2.4GHz that provide internet to large area but al
 
 ## Presenting data
 
-Congratulations! You finally made it! This is the last part of the tutorial. Follow this guide to learn how to create dashboards and widgets in Ubidots.  [Guide on how to create Dashboards and Widgets (here)](https://help.ubidots.com/en/articles/2400308-create-dashboards-and-widgets). The device automatically sends data after every 15 minutes which triggers the alerts that are sent via email. [The data sent is stored](https://help.ubidots.com/en/articles/636669-how-long-is-my-data-stored-for) in the Ubidots's [MongoDB](https://ubidots.com/blog/designing-for-the-internet-of-things/) for a month.
+Congratulations! You finally made it! This is the last part of the tutorial. Follow this guide to learn how to create dashboards and widgets in Ubidots.  [Guide on how to create Dashboards and Widgets (here)](https://help.ubidots.com/en/articles/2400308-create-dashboards-and-widgets). The device automatically sends data after every 15 minutes which triggers the alerts that are sent via email. [The data sent is stored](https://help.ubidots.com/en/articles/636669-how-long-is-my-data-stored-for) in the Ubidots's [MongoDB](https://ubidots.com/blog/designing-for-the-internet-of-things/) for 1 month.
 
 ![dashboardDevices](https://user-images.githubusercontent.com/50623449/176837032-9b0d3f75-5a05-4b45-bdf7-ad87aef38bef.png)
 
