@@ -267,7 +267,7 @@ Here is the final project.
 
 ![finalProject2](https://user-images.githubusercontent.com/50623449/176839342-21dbfb0b-eb89-4885-84e4-8cf2108e95ac.jpg)
 
-*Figure 17: Smart IoT connected Lake (Tröllsjön)*
+*Figure 17: Smart IoT connected Tröllsjön*
 
 -----------
 
