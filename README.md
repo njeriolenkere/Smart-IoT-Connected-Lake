@@ -114,6 +114,8 @@ The power cord(red) and ground cord (black)of the pH sensor (SEN0161) and the te
 Check the datasheet of the hardware you have to determine things like the power requirement, resistor and the pins allocation.
 
 ## IoT visualisation Platform
+
+### Ubidots 
 I chose Ubidots since it offers both free (Ubidots STEM ) for students and personal use and paid subscription(For Business). The free Ubidots STEM is good for beginners since it has tutorials, offer 3 devices connection for free, no plugins required in-order to get started, neat real-time dashboard with many different widgets types, hosted on the cloud, good user interface design and easy to create events that triggers notifications via Email, SMS, Telegram, Voice calls, Webhooks or Slack notifications.  
 
 ![ubidots](https://user-images.githubusercontent.com/50623449/176404955-bb6d9ba2-3b66-4363-ae2c-a673ea5e76f6.png)
@@ -122,13 +124,20 @@ I chose Ubidots since it offers both free (Ubidots STEM ) for students and perso
 
 The paid subscription(For Business) offers multiple device connection among other many important features that are good for Entrepreneurs , Professionals and Industries.
 
+### PyBytes
+Pybytes is a device management platform that empowers you by giving you full control over your Pycom devices. With Pybytes you have control over your device’s data stream and more. [(source)](https://docs.pycom.io/pybytes/). PyBytes has a simple dashboard however due to time factor, I did not get to use it after using Ubidots. 
+
+![PyBytes](https://user-images.githubusercontent.com/50623449/177572342-0bc784a8-13e8-4e84-b359-4cba427c53ed.png)
+
+*Figure 9:  PyBytes Dashboard*
+
 ## The code : Software
 We will use this libraries; urequest.py library is for Ubidots, while onewire.py library is for temperature sensor (DS18B20). So create a library file by right clicking on the Project Folder(lopy)  -> New folder. Name it lib.  Right click on lib  ->New File write urequests.py, click enter. Repeat the same procedure in-order create a onewire.py file.  
-On Atom, click the urequests.py file and [copy this urequests.py code](https://github.com/njeriolenkere/Smart-IoT-Connected-Lake/blob/main/urequests.py) paste it and save. Click the onewire.py  file, [copy this onewire.py code](https://github.com/njeriolenkere/Smart-IoT-Connected-Lake/blob/main/onewire.py) paste it and save it.   Find the full code here: [Smart-IoT-Connected-Lake code (here)](https://github.com/njeriolenkere/Smart-IoT-Connected-Lake).  If you have done everything correctly, the your code structure should be organised as showned on *Figure 9*.
+On Atom, click the urequests.py file and [copy this urequests.py code](https://github.com/njeriolenkere/Smart-IoT-Connected-Lake/blob/main/urequests.py) paste it and save. Click the onewire.py  file, [copy this onewire.py code](https://github.com/njeriolenkere/Smart-IoT-Connected-Lake/blob/main/onewire.py) paste it and save it.   Find the full code here: [Smart-IoT-Connected-Lake code (here)](https://github.com/njeriolenkere/Smart-IoT-Connected-Lake).  If you have done everything correctly, the your code structure should be organised as showned on *Figure 10*.
 
 ![lib](https://user-images.githubusercontent.com/50623449/176406650-57082fa6-8855-4b2a-8ab9-cd8396dcc1db.png)
 
-*Figure 9: The code structure*
+*Figure 10: The code structure*
 
 ### main.py code
 This main.py code does the following, imports libraries, set up network, collects data from the pH sensor (SEN0161) and the temperature sensor (DS18B20) and send that data to Ubidots via WIFI.
@@ -215,54 +224,55 @@ In this project we use WIFI at 2.4GHz that provide internet to large area but al
 
 ![CommTech](https://user-images.githubusercontent.com/50623449/176409605-35d3f4a1-2855-4ca8-9a1a-cbde1c4249df.jpg)
 
-*Figure 10: Communication technologies [source: avsystem.com](https://www.avsystem.com/blog/iot-connectivity/)*
+*Figure 11: Communication technologies [source: avsystem.com](https://www.avsystem.com/blog/iot-connectivity/)*
 
 ## Presenting data
+
 Congratulations! You finally made it! This is the last part of the tutorial. Follow this guide to learn how to create dashboards and widgets in Ubidots.  [Guide on how to create Dashboards and Widgets (here)](https://help.ubidots.com/en/articles/2400308-create-dashboards-and-widgets). The device automatically sends data after every 15 minutes which triggers the alerts that are sent via email. The data sent is stored for a month at the Ubidots database which is a Cloud service. Check their help Center: [Ubidots data storage info (here)](https://help.ubidots.com/en/articles/636669-how-long-is-my-data-stored-for).
 
 ![dashboardDevices](https://user-images.githubusercontent.com/50623449/176837032-9b0d3f75-5a05-4b45-bdf7-ad87aef38bef.png)
 
-*Figure 11:  Dashboard*
+*Figure 12:  Ubidots Dashboard*
 
 -----------
 ![dashboardIOT](https://user-images.githubusercontent.com/50623449/176837361-542f5359-40fa-45fc-9405-d4fab0111801.png)
 
-*Figure 12: Sensors information on dashboard*
+*Figure 13: Sensors information on dashboard*
 
 -----------
 ![eventsIOT](https://user-images.githubusercontent.com/50623449/176837443-c6888678-6126-43e2-9c1d-704f3fa90fa0.png)
 
-*Figure 13: Events that sends triggers alerts*
+*Figure 14: Events that sends triggers alerts*
 
 -----------
 
 ![alerts](https://user-images.githubusercontent.com/50623449/176837655-432246f8-2111-4855-b2d8-b498ed9509ad.png)
 
-*Figure 14: Email alerts*
+*Figure 15: Email alerts*
 
 ## The final project
 Here is the final project.
 ![finalProject1](https://user-images.githubusercontent.com/50623449/176839215-f296a076-8dec-4608-95b6-d82727f9e342.jpg)
 
-*Figure 15: Tröllsjön, Tranås in Sweden*
+*Figure 16: Tröllsjön, Tranås in Sweden*
 
 -----------
 
 ![finalProject2](https://user-images.githubusercontent.com/50623449/176839342-21dbfb0b-eb89-4885-84e4-8cf2108e95ac.jpg)
 
-*Figure 16: Smart IoT connected Lake (Tröllsjön)*
+*Figure 17: Smart IoT connected Lake (Tröllsjön)*
 
 -----------
 
 ![finalProject3](https://user-images.githubusercontent.com/50623449/176839465-4ebb2251-47c5-42d8-857d-58986d050b39.jpg)
 
-*Figure 17: Real-time data visualisation on the dashboard*
+*Figure 18: Real-time data visualisation on the dashboard*
 
 -----------
 
 ![finalProject4](https://user-images.githubusercontent.com/50623449/176839548-55014f10-3f40-4bda-94cb-c6d2e455d613.jpg)
 
-*Figure 18: Sensors in the water*
+*Figure 19: Sensors in the water*
 
 ### Future
 Despite the hardware problems, I am very happy to finish this project. I would recommend anyone interested in Internet of Things (IoT), smart things to study [Applied Internet of Things](https://lnu.se/en/course/introduction-to-applied-internet-of-things/distance-international-summer/)  at the [Linneaus University](https://lnu.se/en/). The flexible workshops, guest lectures, amazing lecturers and TAs, helpful students, quick support and fast feedback made the course excellent. The course opened me up to opportunities on what can be achieved with IoT. In the future, I hope to expand more on this project by adding more devices such as Oled display and sensors. I plan to also create other smart devices e.g. the Smart Garden.
