@@ -261,7 +261,7 @@ Congratulations! You finally made it! This is the last part of the tutorial. Fol
 Here is the final project.
 ![finalProject1](https://user-images.githubusercontent.com/50623449/176839215-f296a076-8dec-4608-95b6-d82727f9e342.jpg)
 
-*Figure 16: Tröllsjön, Tranås in Sweden*
+*Figure 16: Tröllsjön(Troll Lake), Tranås in Sweden*
 
 -----------
 
