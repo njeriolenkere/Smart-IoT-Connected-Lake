@@ -77,7 +77,7 @@ Click on the main.py and paste this MicroPython code below and press **ctrl + S*
 import pycom
 import time
 
-pycom.heartbeat(False)
+pycom.heartbeat(False) # We disable LED heartbeat to control it manually
 while True:
     #colors in hexadecimal (0xRRGGBB)
     pycom.rgbled(0xFF0000)  # LED turns Red
@@ -162,7 +162,7 @@ from config import SSID, PASS, TOKEN #Call config file that contains your ssid, 
 
 
 pycom.heartbeat(False) # We disable LED heartbeat to control it manually
-pycom.rgbled(0x00FF00)  # LED turns Green
+pycom.rgbled(0x00FF00)  # Turns LED Green
 
 # Builds the json to send the request
 def build_json(variable1, value1, variable2, value2):
