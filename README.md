@@ -122,7 +122,7 @@ Check the datasheet of the hardware you have to determine things like the power 
 
 ## IoT visualisation Platform
 
-### Ubidots 
+### [Ubidots](https://ubidots.com/stem/)
 I chose Ubidots since it offers both free (Ubidots STEM ) for students and personal use and paid subscription(For Business). The free Ubidots STEM is good for beginners since it has tutorials, offer 3 devices connection for free, no plugins required in-order to get started, neat real-time dashboard with many different widgets types, hosted on the cloud, good user interface design and easy to create events that triggers notifications via Email, SMS, Telegram, Voice calls, Webhooks or Slack notifications.  
 
 ![ubidots](https://user-images.githubusercontent.com/50623449/176404955-bb6d9ba2-3b66-4363-ae2c-a673ea5e76f6.png)
@@ -131,8 +131,8 @@ I chose Ubidots since it offers both free (Ubidots STEM ) for students and perso
 
 The paid subscription(For Business) offers multiple device connection among other many important features that are good for Entrepreneurs , Professionals and Industries.
 
-### PyBytes
-Pybytes is a device management platform that empowers you by giving you full control over your Pycom devices. With Pybytes you have control over your device’s data stream and more. [(source)](https://docs.pycom.io/pybytes/).  It is customisable, you can set up key performance indicators data from all your sensors, Keep track of your device’s status and battery level. PyBytes has a simple dashboard however due to time factor, I did not get to use it after using Ubidots. 
+### [PyBytes](https://pybytes.pycom.io)
+Pybytes is a device management platform that empowers you by giving you full control over your Pycom devices. With Pybytes you have control over your device’s data stream and more.  It is customisable, you can set up key performance indicators data from all your sensors, Keep track of your device’s status and battery level. PyBytes has a simple dashboard however due to time factor, I did not get to use it after using Ubidots. 
 
 ![PyBytes](https://user-images.githubusercontent.com/50623449/177572342-0bc784a8-13e8-4e84-b359-4cba427c53ed.png)
 
