@@ -226,7 +226,7 @@ while True:
    ```
 ## Transmitting data
 
-The wireless protocol used in this project is WIFI. WIFI allows devices to connect to internet via a router. WIFI has high bit rate which is good to send data fast, it is short range and consumes more power. Since the device is connect to computer via USB charger, high power consumption by WIFI is OK: See *Figure 11*. 
+The wireless protocol used in this project is WIFI. WIFI allows devices to connect to internet via a router. WIFI has high bit rate which is good to send data fast, it is short range and consumes more power. Since the device is connect to computer via USB charger, high power consumption by WIFI is OK: See *Figure 12*. 
 In this project we use WIFI at 2.4GHz that provide internet to large area but alittle bit slow compared to 5 Ghz. **Note:** If your wireless router does not support 2.4GHZ, you can use your phone as a WIFI hotspot. Read more on [How to Connect to Mobile WIFI (here)](https://www.businessinsider.com/what-is-mobile-hotspot?r=US&IR=T). The transport protocol used is WebHook (HTTPs) that packages data as JSON object and sends that data to Ubidot every 15 minutes. 
 
 ### Security
