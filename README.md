@@ -52,7 +52,7 @@ Connect the Lopy4 to the board 3.1 using pins. Then connect your device (1) to t
 ### Step 3: Firmware update
 Update your firmware to the latest version to avoid running into issues.  
 + [Download Firmware for Updating Device (here)](https://docs.pycom.io/updatefirmware/device/), Install the downloaded file and open it. Press Continue.
-+ Communication -> In port section, select the COM port to your PyCom Expansion board (If the COMM port is not automatically filled in, refer to topic named Troubleshoot: Problem 2). On type, choose **development** and press continue.  
++ Communication -> In port section, select the COMM port to your PyCom Expansion board (If the COMM port is not automatically filled in, refer to topic named Troubleshoot: Problem 2). On type, choose **development** and press continue.  
 + Advance setting -> on device type, **choose your device**.  On file system  ->  check the boxes of **Erase during update**.  on RESET ->  check the boxes, **CONFIG Partition  and  NVS Partition**, On LoRa region  ->  **choose your country**,  press continue. 
 + After a few minutes, you will see results, press done. 
 
