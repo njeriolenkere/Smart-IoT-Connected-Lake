@@ -7,7 +7,7 @@
 * Year: July 2022
 
 ## Project Overview
-The aim of this project is to teach how to create a smart IoT connected lake. Using the temperature sensor (DS18B20) and the pH sensor (SEN0161) to measure and send the data collected via WIFI to an  IoT platform(Ubidots) for visualisation. Depending on your level of skill and hardware or software problems, this project can take between 20 minutes - 48 hours.
+The aim of this project is to teach how to create a smart IoT connected lake. Using the temperature sensor (DS18B20) and the pH sensor (SEN0161) to measure and send the data collected via WIFI to an  IoT platform(Ubidots) for visualisation. Depending on your level of skill and hardware or software problems, this project can take between **1 - 48 hours.**
 
 ![projectOverview](https://user-images.githubusercontent.com/50623449/175966042-1a00d573-fcf9-4389-ac72-350f675e068d.jpg)
 *Figure 1: Project overview*
@@ -22,7 +22,7 @@ The purpose of this system is to measure and gather the data of the lake named T
 
 
 ## Materials: Hardware
-To complete the tutorial, you can use any Pycom ESP32 development board that supports WIFI. In this tutorial we focus on [LoPy4](https://docs.pycom.io/products/). If you are environment conscious, you can purchase cheaper second-hand devices for around 600 Swedish crowns at online stores. If you want to buy new devices like this one [Pycom Basic bundle @ Electrokit](https://www.electrokit.com/produkt/lnu-1dt305-tillampad-iot-fipy-basic-bundle/) , it will cost you up to 1,348 Swedish crowns.
+To complete the tutorial, you can use any Pycom ESP32 development board that supports WIFI. In this tutorial we focus on [LoPy4](https://docs.pycom.io/products/). If you are environment conscious, you can purchase cheaper second-hand devices for around **600 Swedish crowns** at online stores. If you want to buy new devices like this one [Pycom Basic bundle @ Electrokit](https://www.electrokit.com/produkt/lnu-1dt305-tillampad-iot-fipy-basic-bundle/) , it will cost you up to **1,348 Swedish crowns.**
 
 | Name        | Specifications | Picture        | Store       |
 | :----------- | :-------------- | -------------- | :----------- |
@@ -37,16 +37,16 @@ To complete the tutorial, you can use any Pycom ESP32 development board that sup
 
 *Figure 3: Table with bill of materials*
 
-
 ## Computer set up 
 ### Step 1: Choose IDE(Integrated Development Environment) and install node.js
 I tried using Pycharm IDE but at this time they do not support Pymakr plugin yet hence I download and used Atom IDE for windows because they support the plugin.  
 
 #### Computers with Windows OS follow these steps:
-Download and install  [Atom (here)](https://atom.io/). Then  download and install Current version [Node js (here)](https://nodejs.org/en/). After installing both Atom and Node.js, restart you computer. Find a detailed tutorial here : [Pycom](https://docs.pycom.io/).  If you want to use another IDE such as Visual Studio Code IDE follow this easy to follow tutorial : [Visual Studio Code set up](https://www.youtube.com/watch?v=fu_O6gtrDG4). **Note:** All the softwares used in this project are free.
+Download and install  [Atom (here)](https://atom.io/). Then  download and install Current version [Node js (here)](https://nodejs.org/en/). After installing both Atom and Node.js, restart you computer. Find a detailed [Pycom tutorial (here)](https://docs.pycom.io/).  If you want to use another IDE such as Visual Studio Code IDE follow this easy to follow tutorial : [Visual Studio Code set up (here)](https://www.youtube.com/watch?v=fu_O6gtrDG4). **Note:** All the softwares used in this project are free.
 
 ### Step 2: LoPy4 and development board
 Connect the Lopy4 to the board 3.1 using pins. Then connect your device (1) to the computer using the USB cable (2). ![getting_started](https://user-images.githubusercontent.com/50623449/176187022-14cae240-89fa-4e1b-aaf0-a0b36debb4b3.png)
+
 *Figure 4: Source: [Pycom.io](https://docs.pycom.io/)*
 
 ### Step 3: Firmware update
@@ -54,6 +54,10 @@ Update your firmware to the latest version to avoid running into issues.
 + [Download Firmware for Updating Device (here)](https://docs.pycom.io/updatefirmware/device/), Install the downloaded file and open it. Press Continue.
 + Communication -> type, choose **development** and press continue.  
 + Advance setting -> on device type, **choose your device**.  On file system  ->  check the boxes of **Erase during update**.  on RESET ->  check the boxes, **CONFIG Partition  and  NVS Partition**, On LoRa region  ->  **choose your country**,  press continue. 
+
+![firmwar](https://user-images.githubusercontent.com/50623449/177880794-8e0f2b13-be51-48ef-9788-ab5e7ba39b36.png)
+*Figure 5: Steps of updting firmware [Source: Linneaus University](https://lnu.se/en/)*
+
 + After a few minutes, you will see results, press done. 
 
 ### Step 4: Setting up Atom and install Pymakr
@@ -66,7 +70,7 @@ Give the Project Folder a name eg. lopy. Right click on your Project Folder ->Ne
 
 ![3COM](https://user-images.githubusercontent.com/50623449/176900596-343f26eb-5b53-41c6-ab70-2f3014c9dec6.png)
 
-*Figure 5: Atom project*
+*Figure 6: Atom project*
 
 Click on the main.py and paste this MicroPython code below and press **ctrl + S** on your keyboard to save it. **Important!!!** Always save the file after pasting or writing it before uploading it to avoid errors).
 ```Python
@@ -91,7 +95,7 @@ If you upload the main.py file but encounter a problem such as >>Upload failed: 
 
 ![prob1](https://user-images.githubusercontent.com/50623449/176201445-12df694b-68c5-4917-b1b7-e7b39e4a909f.png)
 
-*Figure 6: Troubleshooting*
+*Figure 7: Troubleshooting*
 
 ### Troubleshoot: Problem 2
 If the REPL console indicates Conecting to ...>> failed to connect (error: Port is not open) Click here to try again, reconnect the micro controller, uninstall and then install the Pymaker. Then upload main.py file. If that doesn't work, it is possible that the REPL console did not identify the right COMM port. To solves this, follow this tutorial: [COMM Port Issue solved, Time: 18:25-20:35](https://www.youtube.com/watch?v=BPSxLsorNco&t=1223s)
@@ -109,7 +113,7 @@ If the REPL console is greyed out, or if you click on the upload button or any b
 
 ![circuitFritzing2](https://user-images.githubusercontent.com/50623449/176835647-4f959a45-efa3-4bcb-9920-134b1f95ca0b.png)
 
-*Figure 7: Circuit diagram* 
+*Figure 8: Circuit diagram* 
 
 After successful completion of all the above steps, it is time to connect sensors and power them up. The data transfer cord (yellow) of pH sensor (SEN0161) connected to pin 16, while temperature sensor (DS18B20) data transfer cord (yellow) is connected to Pin 22. To learn more about Pins, [read LoPy Datasheet (here)](https://docs.pycom.io/gitbook/assets/lopy4-pinout.pdf). 
 The temperature sensor (DS18B20) requires a pull-up resistor (4.7 Ohm) that will be connected between the data transfer cord and the power pin(red).  The reson why we use a pull-up resistor is because  temperature sensor (DS18B20) is a one wire device. One wire devices require resistors to be connected to the data signal line sothat data is read correctly by the sensor.
@@ -123,7 +127,7 @@ I chose Ubidots since it offers both free (Ubidots STEM ) for students and perso
 
 ![ubidots](https://user-images.githubusercontent.com/50623449/176404955-bb6d9ba2-3b66-4363-ae2c-a673ea5e76f6.png)
 
-*Figure 8: IoT  visualisation platform | Ubidots*
+*Figure 9: IoT  visualisation platform | Ubidots*
 
 The paid subscription(For Business) offers multiple device connection among other many important features that are good for Entrepreneurs , Professionals and Industries.
 
@@ -132,15 +136,15 @@ Pybytes is a device management platform that empowers you by giving you full con
 
 ![PyBytes](https://user-images.githubusercontent.com/50623449/177572342-0bc784a8-13e8-4e84-b359-4cba427c53ed.png)
 
-*Figure 9:  PyBytes Dashboard*
+*Figure 10:  PyBytes Dashboard*
 
 ## The code : Software
 We will use this libraries; urequest.py library is for Ubidots, while onewire.py library is for temperature sensor (DS18B20). So create a library file by right clicking on the Project Folder(lopy)  -> New folder. Name it lib.  Right click on lib  ->New File write urequests.py, click enter. Repeat the same procedure in-order create a onewire.py file.  
-On Atom, click the urequests.py file and [copy this urequests.py code](https://github.com/njeriolenkere/Smart-IoT-Connected-Lake/blob/main/urequests.py) paste it and save. Click the onewire.py  file, [copy this onewire.py code](https://github.com/njeriolenkere/Smart-IoT-Connected-Lake/blob/main/onewire.py) paste it and save it.   Find the full code here: [Smart-IoT-Connected-Lake code (here)](https://github.com/njeriolenkere/Smart-IoT-Connected-Lake).  If you have done everything correctly, the your code structure should be organised as showned on *Figure 10*.
+On Atom, click the urequests.py file and [copy this urequests.py code](https://github.com/njeriolenkere/Smart-IoT-Connected-Lake/blob/main/urequests.py) paste it and save. Click the onewire.py  file, [copy this onewire.py code](https://github.com/njeriolenkere/Smart-IoT-Connected-Lake/blob/main/onewire.py) paste it and save it.   Find the full code here: [Smart-IoT-Connected-Lake code (here)](https://github.com/njeriolenkere/Smart-IoT-Connected-Lake).  If you have done everything correctly, the your code structure should be organised as showned on *Figure 11*.
 
 ![lib](https://user-images.githubusercontent.com/50623449/176406650-57082fa6-8855-4b2a-8ab9-cd8396dcc1db.png)
 
-*Figure 10: The code structure*
+*Figure 11: The code structure*
 
 ### main.py code
 This main.py code does the following, imports libraries, set up network, collects data from the pH sensor (SEN0161) and the temperature sensor (DS18B20) and send that data to Ubidots via WIFI.
@@ -231,7 +235,7 @@ In this project we use WIFI at 2.4GHz that provide internet to large area but al
 
 ![CommTech](https://user-images.githubusercontent.com/50623449/176409605-35d3f4a1-2855-4ca8-9a1a-cbde1c4249df.jpg)
 
-*Figure 11: Communication technologies [source: avsystem.com](https://www.avsystem.com/blog/iot-connectivity/)*
+*Figure 12: Communication technologies [source: avsystem.com](https://www.avsystem.com/blog/iot-connectivity/)*
 
 ## Presenting data
 
@@ -239,47 +243,47 @@ Congratulations! You finally made it! This is the last part of the tutorial. Fol
 
 ![dashboardDevices](https://user-images.githubusercontent.com/50623449/176837032-9b0d3f75-5a05-4b45-bdf7-ad87aef38bef.png)
 
-*Figure 12:  Ubidots Dashboard*
+*Figure 13:  Ubidots Dashboard*
 
 -----------
 ![dashboardIOT](https://user-images.githubusercontent.com/50623449/176837361-542f5359-40fa-45fc-9405-d4fab0111801.png)
 
-*Figure 13: Sensors information on dashboard*
+*Figure 14: Sensors information on dashboard*
 
 -----------
 ![eventsIOT](https://user-images.githubusercontent.com/50623449/176837443-c6888678-6126-43e2-9c1d-704f3fa90fa0.png)
 
-*Figure 14: Events that sends triggers alerts*
+*Figure 15: Events that sends triggers alerts*
 
 -----------
 
 ![alerts](https://user-images.githubusercontent.com/50623449/176837655-432246f8-2111-4855-b2d8-b498ed9509ad.png)
 
-*Figure 15: Email alerts*
+*Figure 16: Email alerts*
 
 ## The final project
 Here is the final project.
 ![finalProject1](https://user-images.githubusercontent.com/50623449/176839215-f296a076-8dec-4608-95b6-d82727f9e342.jpg)
 
-*Figure 16: Tröllsjön(Troll Lake), Tranås in Sweden*
+*Figure 17: Tröllsjön(Troll Lake), Tranås in Sweden*
 
 -----------
 
 ![finalProject2](https://user-images.githubusercontent.com/50623449/176839342-21dbfb0b-eb89-4885-84e4-8cf2108e95ac.jpg)
 
-*Figure 17: Smart IoT connected Tröllsjön*
+*Figure 18: Smart IoT connected Tröllsjön*
 
 -----------
 
 ![finalProject3](https://user-images.githubusercontent.com/50623449/176839465-4ebb2251-47c5-42d8-857d-58986d050b39.jpg)
 
-*Figure 18: Real-time data visualisation on the dashboard*
+*Figure 19: Real-time data visualisation on the dashboard*
 
 -----------
 
 ![finalProject4](https://user-images.githubusercontent.com/50623449/176839548-55014f10-3f40-4bda-94cb-c6d2e455d613.jpg)
 
-*Figure 19: Sensors in the water*
+*Figure 20: Sensors in the water*
 
 ### Future
 Despite the hardware problems, I am very happy to finish this project. I would recommend anyone interested in Internet of Things (IoT), smart things to study [Applied Internet of Things](https://lnu.se/en/course/introduction-to-applied-internet-of-things/distance-international-summer/)  at the [Linneaus University](https://lnu.se/en/). The flexible workshops, guest lectures, amazing lecturers and TAs, helpful students, quick support and fast feedback made the course excellent. The course opened me up to opportunities on what can be achieved with IoT. In the future, I hope to expand more on this project by adding more devices such as Oled display and sensors, create other smart devices e.g. the Smart Garden and try other communications technologies for data transmission.
