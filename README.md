@@ -54,12 +54,11 @@ Update your firmware to the latest version to avoid running into issues.
 + [Download Firmware for Updating Device (here)](https://docs.pycom.io/updatefirmware/device/), Install the downloaded file and open it. Press Continue.
 + Communication -> In port section, select the COM port to your PyCom Expansion board (If the COMM port is not automatically filled in, refer to topic named Troubleshoot: Problem 2). On type, choose **development** and press continue.  
 + Advance setting -> on device type, **choose your device**.  On file system  ->  check the boxes of **Erase during update**.  on RESET ->  check the boxes, **CONFIG Partition  and  NVS Partition**, On LoRa region  ->  **choose your country**,  press continue. 
++ After a few minutes, you will see results, press done. 
 
 ![firmwar](https://user-images.githubusercontent.com/50623449/177884074-1f927e1d-93b1-4f92-9770-52872769479f.png)
 
 *Figure 5: Steps of updating firmware [Source: Linneaus University](https://lnu.se/en/)*
-
-+ After a few minutes, you will see results, press done. 
 
 ### Step 4: Setting up Atom and install Pymakr
 Open Atom go to file->settings->install->search for Pymakr and then install it. Step by step guide on [how to install Pymaker in Atom (here)](https://docs.pycom.io/gettingstarted/software/atom/).
