@@ -4,7 +4,7 @@
 * Student username: no222gv
 * School: [Linneaus University](https://lnu.se/en/)
 * Course:  [Applied Internet of Things](https://lnu.se/en/course/introduction-to-applied-internet-of-things/distance-international-summer/)
-* Year: July 2022
+* Year: Summer 2022
 
 ## Project Overview
 The aim of this project is to teach how to create a smart IoT connected lake. Using the temperature sensor (DS18B20) and the pH sensor (SEN0161) to measure and send the data collected via WIFI to an  IoT platform(Ubidots) for visualisation. Depending on your level of skill and hardware or software problems, this project can take between **1 - 48 hours.**
@@ -15,7 +15,7 @@ The aim of this project is to teach how to create a smart IoT connected lake. Us
 
 ## Objective
 Initially I wanted to create a smart garden, but due to hardware delay and eventual cancellation, I had to create something else. Our lecturer; [Fredrik ](https://www.youtube.com/channel/UCdrHIhg_z9psywqLT6HKhRg/videos), shared with us; the students, several project inspiration .  One of the project ideas inspired me to create the smart IoT connected lake.
-The purpose of this system is to measure and gather the data of the lake named Tröllsjön, in Tranås, Sweden. The temperature is measured to avoid the body from getting a cold water shock when you dive in the first time while the pH is measured to know the pH scale of the water because according to [usgs.gov](https://www.usgs.gov/faqs/can-lakes-near-volcanoes-become-acidic-enough-be-dangerous-people-and-animals) they state that pH of 0.5 is potentially capable of causing burns to human skin. The data collected from the temperature sensor (DS18B20) and the pH sensor (SEN0161) can be viewed on the IOT platform(Ubidots) to help the swimmer know the conditions of the lake before they take a dive.
+The purpose of this system is to measure and gather the data of the lake named Tröllsjön, in Tranås, Sweden. The temperature is measured to avoid the body from getting a cold water shock when you dive in the first time. The pH is measured to know the pH scale of the water because according to [usgs.gov](https://www.usgs.gov/faqs/can-lakes-near-volcanoes-become-acidic-enough-be-dangerous-people-and-animals) they state that pH of 0.5 is potentially capable of causing burns to human skin. The data collected from the temperature sensor (DS18B20) and the pH sensor (SEN0161) can be viewed on the IOT platform(Ubidots) to help the swimmer know the conditions of the lake before they take a dive.
 
 ![ph_scale](https://user-images.githubusercontent.com/50623449/175970185-f554e611-fa88-4576-b9a7-8ab2cc481a02.png)
 *Figure 2: PH scale designed using [Inkscape](https://inkscape.org/)*
@@ -116,9 +116,9 @@ If the REPL console is greyed out, or if you click on the upload button or any b
 *Figure 8: Circuit diagram* 
 
 After successful completion of all the above steps, it is time to connect sensors and power them up. The data transfer cord (yellow) of pH sensor (SEN0161) connected to pin 16, while temperature sensor (DS18B20) data transfer cord (yellow) is connected to Pin 22. To learn more about Pins, [read LoPy Datasheet (here)](https://docs.pycom.io/gitbook/assets/lopy4-pinout.pdf). 
-The temperature sensor (DS18B20) requires a pull-up resistor (4.7 Ohm) that will be connected between the data transfer cord and the power pin(red).  The reson why we use a pull-up resistor is because  temperature sensor (DS18B20) is a one wire device. One wire devices require resistors to be connected to the data signal line sothat data is read correctly by the sensor.
+The temperature sensor (DS18B20) requires a pull-up resistor (4.7 Ohm) that will be connected between the data transfer cord and the power pin(red).  The reson why we use a pull-up resistor is because  temperature sensor (DS18B20) is a one wire device. One wire devices require resistors to be connected to the data signal line so that data is read correctly by the sensor.
 The power cord(red) and ground cord (black)of the pH sensor (SEN0161) and the temperature sensor (DS18B20) are connected at the lower lane. The black cord(GND) and the the red cord(3v 3) from the expansion board is connected to the breadboard at the lower lane to power up the whole lower lane with 3.3v power.
-Check the datasheet of the hardware you have to determine things like the power requirement, resistor and the pins allocation.
+**Check the datasheet of the hardware you have to determine things like the power requirement, resistor and the pins allocation.**
 
 ## IoT visualisation Platform
 
@@ -230,7 +230,7 @@ The wireless protocol used in this project is WIFI. WIFI allows devices to conne
 In this project we use WIFI at 2.4GHz that provide internet to large area but alittle bit slow compared to 5 Ghz. **Note:** If your wireless router does not support 2.4GHZ, you can use your phone as a WIFI hotspot. Read more on [How to Connect to Mobile WIFI (here)](https://www.businessinsider.com/what-is-mobile-hotspot?r=US&IR=T). The transport protocol used is WebHook (HTTPs) that packages data as JSON object and sends that data to Ubidot every 15 minutes. 
 
 ### Security
-+ Config.py file was created to store password, Token and the SSID so that they are not sniffed over the network.
++ Config.py file was created to store password, Token and the SSID.
 + HTTPs is used instead of HTTP because it is secure. HTTP transfers data in plain text while HTTPS transfers data in cipher text. [(source): What is Difference Between HTTP and HTTPS?](https://www.guru99.com/difference-http-vs-https.html)
 
 ![CommTech](https://user-images.githubusercontent.com/50623449/176409605-35d3f4a1-2855-4ca8-9a1a-cbde1c4249df.jpg)
