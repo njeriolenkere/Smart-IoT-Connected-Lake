@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="google-site-verification" content="QcZ8Bkl3bi8rfRzGh2US2C6z6djaIYuVnK4mccn8ZmU" /> </head>
-<meta name="Njeri Olenkere" content="How to create a smart IoT connected lake">
+<meta name="Njeri Olenkere" content="How to create a smart IoT connected lake.">
 <meta name="keywords" content="IoT,ubidots,pycom,pybytes,smart,python,internet of things">
 
 <body></body>
