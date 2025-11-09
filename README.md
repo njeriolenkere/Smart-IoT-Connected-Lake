@@ -95,9 +95,9 @@ Correct Safe Boot / Firmware Update Procedure
 *Figure 5 a: How to safe boot Pycom device*
 
 ### Step 3b: Firmware update Error!
-[Solved]  could not open port com7: WindowsError(5, Access is denied.) This means another ide is using that port. Please close all IDEs to free the port. See error image
+[Solved]  could not open port com7: WindowsError(5, Access is denied.) This means another ide is using that port. Please close all IDEs to free the port. Then click the Restart button. See error image below.
 
-![NJERI-OLENKERE](https://github.com/user-attachments/assets/cf1f566c-ce31-4979-a3eb-40a20a6c30f1)
+![NJERI-OLENKERE](https://github.com/user-attachments/assets/49bdfd27-0d24-42cd-85c1-302b993827ac)
 
 *Figure 5 b: Error*
 
