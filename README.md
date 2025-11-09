@@ -74,6 +74,13 @@ Update your firmware to the latest version to avoid running into issues.
 ### Step 4: Setting up Atom and install Pymakr
 Open Atom go to file->settings->install->search for Pymakr and then install it. Step by step guide on [how to install Pymaker in Atom (here)](https://docs.pycom.io/gettingstarted/software/atom/).
 
+### Step 3: Firmware update Error!
+Failed to connect to ESP32: Timed out waiting for packet header. If you get this error dont worry. Try booting your device. Click on buton 1 then click on button 2 as showned in the picture below.
+
+![NJERI_OLENKERE](https://github.com/user-attachments/assets/1b26ae3f-18a3-4552-8640-08112b6ee8e2)
+
+*Figure 5 a: How to safe boot*
+
 ### Step 5: Upload code
 On Atom, go to File-> add Project Folder 
 Give the Project Folder a name eg. lopy. Right click on your Project Folder ->New File-> write main.py, click enter. Repeat the same procedure inorder create a boot.py file and config.py file.
