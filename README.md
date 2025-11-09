@@ -73,11 +73,32 @@ Update your firmware to the latest version to avoid running into issues.
 
 ### Step 3a: Firmware update Error! Failed to connect to ESP32: Timed out waiting for packet header
 
-[Solved] Failed to connect to ESP32: Timed out waiting for packet header. If you get this error dont worry. [SOLUTION]=> Try booting your device. Click on buton 1 then click on button 2 as showned in the picture below.
+[Solved] Failed to connect to ESP32: Timed out waiting for packet header. If you get this error dont worry here is the solution: 
+Correct Safe Boot / Firmware Update Procedure
+
+*Enter Safe Boot: Press and hold BOOT (on expansion board) (2)
+
+*Press and release RST (reset) while keeping BOOT held (1)
+
+*Release BOOT after a few seconds (2)
+
+*Blue LED should stay solid — device is in safe boot mode
+
+*Upload Firmware /Flash the latest firmware
+
+*To Exit Safe Boot / Normal Boot: Simply press RST (without holding BOOT) (1). The LoPy4 should boot normally and PyMakr can connect
+*If this solution doesnt work out for you. please ask AI/ ChatGPT/Duck.ai etc for help.
 
 ![NJERI_OLENKERE](https://github.com/user-attachments/assets/1b26ae3f-18a3-4552-8640-08112b6ee8e2)
 
 *Figure 5 a: How to safe boot Pycom device*
+
+### Step 3b: Firmware update Error!
+[Solved]  could not open port com7: WindowsError(5, Access is denied.) This means another ide is using that port. Please close all IDEs to free the port. See error image
+
+![NJERI-OLENKERE](https://github.com/user-attachments/assets/cf1f566c-ce31-4979-a3eb-40a20a6c30f1)
+
+*Figure 5 b: Error*
 
 ### Step 4: Setting up Atom and install Pymakr
 Open Atom go to file->settings->install->search for Pymakr and then install it. Step by step guide on [how to install Pymaker in Atom (here)](https://docs.pycom.io/gettingstarted/software/atom/).
