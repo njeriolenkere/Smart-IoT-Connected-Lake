@@ -87,6 +87,7 @@ Correct Safe Boot / Firmware Update Procedure
 *Upload Firmware /Flash the latest firmware
 
 *To Exit Safe Boot / Normal Boot: Simply press RST (without holding BOOT) (1). The LoPy4 should boot normally and PyMakr can connect
+
 *If this solution doesnt work out for you. please ask AI/ ChatGPT/Duck.ai etc for help.
 
 ![NJERI_OLENKERE](https://github.com/user-attachments/assets/1b26ae3f-18a3-4552-8640-08112b6ee8e2)
